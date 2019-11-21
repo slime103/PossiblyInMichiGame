@@ -12,8 +12,10 @@
     <session id="-366712584">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -28,53 +30,56 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="2892" />
+          <entry key="cs" value="4746" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="2892" />
+          <entry key="C#" value="4746" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            <state relative-caret-position="903">
+              <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
               <folding>
-                <marker date="1574267883081" expanded="true" signature="6:100" ph="..." />
-                <marker date="1574267883081" expanded="true" signature="102:297" ph="/* INTENT: Controls the main dialogue system. Contains the dialogue box and text (NOT STRINGS) ... */" />
-                <marker date="1574267883081" expanded="true" signature="343:2685" ph="{...}" />
-                <marker date="1574267883081" expanded="true" signature="1100:1362" ph="{...}" />
-                <marker date="1574267883081" expanded="true" signature="1420:1441" ph="{...}" />
-                <marker date="1574267883081" expanded="true" signature="1517:1676" ph="{...}" />
-                <marker date="1574267883081" expanded="true" signature="1736:2252" ph="{...}" />
-                <marker date="1574267883081" expanded="true" signature="1900:2122" ph="{...}" />
-                <marker date="1574267883081" expanded="true" signature="2135:2236" ph="{...}" />
-                <marker date="1574267883081" expanded="true" signature="2332:2683" ph="{...}" />
+                <marker date="1574303616746" expanded="false" signature="6:100" ph="..." />
+                <marker date="1574303616746" expanded="true" signature="102:297" ph="/* INTENT: Controls the main dialogue system. Contains the dialogue box and text (NOT STRINGS) ... */" />
+                <marker date="1574303616746" expanded="true" signature="343:3737" ph="{...}" />
+                <marker date="1574303616746" expanded="true" signature="355:708" ph="/* RYAN'S NOTE PLEASE READ BEFORE EDITING: This script is super weird and can be easily broken. If you see an err ... */" />
+                <marker date="1574303616746" expanded="true" signature="1495:1858" ph="{...}" />
+                <marker date="1574303616746" expanded="true" signature="1934:2377" ph="{...}" />
+                <marker date="1574303616746" expanded="true" signature="2437:3304" ph="{...}" />
+                <marker date="1574303616746" expanded="true" signature="2714:3124" ph="{...}" />
+                <marker date="1574303616746" expanded="true" signature="3164:3288" ph="{...}" />
+                <marker date="1574303616746" expanded="true" signature="3383:3735" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            <state relative-caret-position="724">
+              <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
               <folding>
-                <marker date="1574267883105" expanded="true" signature="6:78" ph="..." />
-                <marker date="1574267883105" expanded="true" signature="80:244" ph="/* INTENT: Basic raycast for picking up objects and talking to NPCS ... */" />
-                <marker date="1574267883105" expanded="true" signature="289:1658" ph="{...}" />
-                <marker date="1574267883105" expanded="true" signature="627:771" ph="{...}" />
-                <marker date="1574267883105" expanded="true" signature="829:1656" ph="{...}" />
-                <marker date="1574267883105" expanded="true" signature="1306:1649" ph="{...}" />
-                <marker date="1574267883105" expanded="true" signature="1372:1517" ph="{...}" />
-                <marker date="1574267883105" expanded="true" signature="1531:1626" ph="/* if (mouseRayHit.collider.CompareTag(&quot;Object&quot;)) ... */" />
+                <marker date="1574303587438" expanded="false" signature="6:78" ph="..." />
+                <marker date="1574303587438" expanded="true" signature="80:244" ph="/* INTENT: Basic raycast for picking up objects and talking to NPCS ... */" />
+                <marker date="1574303587438" expanded="true" signature="289:2099" ph="{...}" />
+                <marker date="1574303587438" expanded="true" signature="515:650" ph="{...}" />
+                <marker date="1574303587438" expanded="true" signature="708:2097" ph="{...}" />
+                <marker date="1574303587438" expanded="true" signature="1196:2090" ph="{...}" />
+                <marker date="1574303587438" expanded="true" signature="1260:1911" ph="{...}" />
+                <marker date="1574303587438" expanded="true" signature="1334:1897" ph="{...}" />
+                <marker date="1574303587438" expanded="true" signature="1390:1556" ph="/* Later on I want to add a different mouse hover color so objects are more obviously clickable ... */" />
+                <marker date="1574303587438" expanded="true" signature="1605:1879" ph="{...}" />
+                <marker date="1574303587438" expanded="true" signature="1972:2067" ph="/* if (mouseRayHit.collider.CompareTag(&quot;Object&quot;)) ... */" />
               </folding>
             </state>
           </provider>
@@ -83,10 +88,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="133">
               <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
               <folding>
-                <marker date="1574263240503" expanded="true" signature="6:100" ph="..." />
+                <marker date="1574263240503" expanded="false" signature="6:100" ph="..." />
                 <marker date="1574263240503" expanded="true" signature="102:231" ph="/* INTENT: Allows customizable dialogue for the player to click through ... */" />
                 <marker date="1574263240503" expanded="true" signature="276:453" ph="{...}" />
               </folding>
@@ -130,10 +135,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
       </pane>
@@ -182,12 +187,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574262426980</updated>
-      <workItem from="1574262435100" duration="5442000" />
+      <workItem from="1574262435100" duration="6703000" />
+      <workItem from="1574269345585" duration="2952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5442000" />
+    <option name="totallyTimeSpent" value="9655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -199,14 +205,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="bottom" id="NuGet" order="0" />
+      <window_info anchor="bottom" id="NuGet" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
@@ -220,6 +225,7 @@
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="bottom" id="Unity" order="14" />
       <window_info anchor="right" id="Errors In Solution" order="0" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Unit Tests Coverage" order="2" />
@@ -249,48 +255,51 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="133">
           <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
           <folding>
-            <marker date="1574263240503" expanded="true" signature="6:100" ph="..." />
+            <marker date="1574263240503" expanded="false" signature="6:100" ph="..." />
             <marker date="1574263240503" expanded="true" signature="102:231" ph="/* INTENT: Allows customizable dialogue for the player to click through ... */" />
             <marker date="1574263240503" expanded="true" signature="276:453" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="41" column="40" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        <state relative-caret-position="903">
+          <caret line="85" column="32" selection-start-line="85" selection-start-column="32" selection-end-line="85" selection-end-column="32" />
           <folding>
-            <marker date="1574267883105" expanded="true" signature="6:78" ph="..." />
-            <marker date="1574267883105" expanded="true" signature="80:244" ph="/* INTENT: Basic raycast for picking up objects and talking to NPCS ... */" />
-            <marker date="1574267883105" expanded="true" signature="289:1658" ph="{...}" />
-            <marker date="1574267883105" expanded="true" signature="627:771" ph="{...}" />
-            <marker date="1574267883105" expanded="true" signature="829:1656" ph="{...}" />
-            <marker date="1574267883105" expanded="true" signature="1306:1649" ph="{...}" />
-            <marker date="1574267883105" expanded="true" signature="1372:1517" ph="{...}" />
-            <marker date="1574267883105" expanded="true" signature="1531:1626" ph="/* if (mouseRayHit.collider.CompareTag(&quot;Object&quot;)) ... */" />
+            <marker date="1574303616746" expanded="false" signature="6:100" ph="..." />
+            <marker date="1574303616746" expanded="true" signature="102:297" ph="/* INTENT: Controls the main dialogue system. Contains the dialogue box and text (NOT STRINGS) ... */" />
+            <marker date="1574303616746" expanded="true" signature="343:3737" ph="{...}" />
+            <marker date="1574303616746" expanded="true" signature="355:708" ph="/* RYAN'S NOTE PLEASE READ BEFORE EDITING: This script is super weird and can be easily broken. If you see an err ... */" />
+            <marker date="1574303616746" expanded="true" signature="1495:1858" ph="{...}" />
+            <marker date="1574303616746" expanded="true" signature="1934:2377" ph="{...}" />
+            <marker date="1574303616746" expanded="true" signature="2437:3304" ph="{...}" />
+            <marker date="1574303616746" expanded="true" signature="2714:3124" ph="{...}" />
+            <marker date="1574303616746" expanded="true" signature="3164:3288" ph="{...}" />
+            <marker date="1574303616746" expanded="true" signature="3383:3735" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        <state relative-caret-position="724">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
           <folding>
-            <marker date="1574267883081" expanded="true" signature="6:100" ph="..." />
-            <marker date="1574267883081" expanded="true" signature="102:297" ph="/* INTENT: Controls the main dialogue system. Contains the dialogue box and text (NOT STRINGS) ... */" />
-            <marker date="1574267883081" expanded="true" signature="343:2685" ph="{...}" />
-            <marker date="1574267883081" expanded="true" signature="1100:1362" ph="{...}" />
-            <marker date="1574267883081" expanded="true" signature="1420:1441" ph="{...}" />
-            <marker date="1574267883081" expanded="true" signature="1517:1676" ph="{...}" />
-            <marker date="1574267883081" expanded="true" signature="1736:2252" ph="{...}" />
-            <marker date="1574267883081" expanded="true" signature="1900:2122" ph="{...}" />
-            <marker date="1574267883081" expanded="true" signature="2135:2236" ph="{...}" />
-            <marker date="1574267883081" expanded="true" signature="2332:2683" ph="{...}" />
+            <marker date="1574303587438" expanded="false" signature="6:78" ph="..." />
+            <marker date="1574303587438" expanded="true" signature="80:244" ph="/* INTENT: Basic raycast for picking up objects and talking to NPCS ... */" />
+            <marker date="1574303587438" expanded="true" signature="289:2099" ph="{...}" />
+            <marker date="1574303587438" expanded="true" signature="515:650" ph="{...}" />
+            <marker date="1574303587438" expanded="true" signature="708:2097" ph="{...}" />
+            <marker date="1574303587438" expanded="true" signature="1196:2090" ph="{...}" />
+            <marker date="1574303587438" expanded="true" signature="1260:1911" ph="{...}" />
+            <marker date="1574303587438" expanded="true" signature="1334:1897" ph="{...}" />
+            <marker date="1574303587438" expanded="true" signature="1390:1556" ph="/* Later on I want to add a different mouse hover color so objects are more obviously clickable ... */" />
+            <marker date="1574303587438" expanded="true" signature="1605:1879" ph="{...}" />
+            <marker date="1574303587438" expanded="true" signature="1972:2067" ph="/* if (mouseRayHit.collider.CompareTag(&quot;Object&quot;)) ... */" />
           </folding>
         </state>
       </provider>

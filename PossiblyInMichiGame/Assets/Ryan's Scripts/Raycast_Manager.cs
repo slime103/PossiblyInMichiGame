@@ -6,19 +6,14 @@ using UnityEngine;
 //USAGE: Put this on a raycast manager to use inventory objects, pick up things or talk to people
 public class Raycast_Manager : MonoBehaviour
 {
-    
-    public Camera mainCamera; //Sometimes the camera isn't already set so it's just for safety
     private RaycastHit target; //For storing the gameObject we're clicking 
-    
-    public Vector3 mousePosition;
 
-    public Dialogue_Manager dialogueManager;
+    public Dialogue_Manager dialogueManager; //Get the dialogue manager
     
     // Start is called before the first frame update
     void Start()
     {
-        //mainCamera = GetComponent<Camera>(); //For getting the camera
-        dialogueManager = GetComponent<Dialogue_Manager>();
+        dialogueManager = GameObject.Find("Dialogue_Manager").GetComponent<Dialogue_Manager>(); //Get the dialogue manager
     }
 
     // Update is called once per frame
@@ -31,17 +26,28 @@ public class Raycast_Manager : MonoBehaviour
         
         RaycastHit mouseRayHit = new RaycastHit(); //Instantiate the ray
         
-        Debug.DrawRay(mouseRay.origin, mouseRay.direction * maxDistance, Color.cyan); //A debug to see it
+        Debug.DrawRay(mouseRay.origin, mouseRay.direction * maxDistance, Color.cyan); //Draw it out so we can see it
 
         // Make the ray
         if (Physics.Raycast(mouseRay, out mouseRayHit, maxDistance)) 
         {
-            if (mouseRayHit.collider.CompareTag("NPC"))
+            if (dialogueManager.isTalkingTo == false)
             {
-                //Debug.Log("Oh bitch got hit!");
-                dialogueManager.SetCharacter(collider.gameObject);
+                if (mouseRayHit.collider.CompareTag("NPC"))
+                {
+                
+                    //Later on I want to add a different mouse hover color so objects are more obviously clickable
+                
+                    //If left mouse button is clicked:
+                    if (Input.GetMouseButton(0))
+                    {
+                        dialogueManager.SetCharacter(mouseRayHit.collider.gameObject); //Gets the dialogue holder from the Character
+                        dialogueManager.dialogueBox.SetActive(true); //Turns on the dialogue box
+                    }
+                }
             }
 
+            //For when objects are introduced 
             /*if (mouseRayHit.collider.CompareTag("Object"))
             {
                 
