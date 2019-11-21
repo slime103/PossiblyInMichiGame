@@ -9,6 +9,8 @@ public class Raycast_Manager : MonoBehaviour
     private RaycastHit target; //For storing the gameObject we're clicking 
 
     public Dialogue_Manager dialogueManager; //Get the dialogue manager
+    public Mouse_Manager myMouse;
+    public Inventory myInv;
     
     // Start is called before the first frame update
     void Start()
@@ -43,6 +45,13 @@ public class Raycast_Manager : MonoBehaviour
                     {
                         dialogueManager.SetCharacter(mouseRayHit.collider.gameObject); //Gets the dialogue holder from the Character
                         dialogueManager.dialogueBox.SetActive(true); //Turns on the dialogue box
+                    }
+                }
+                else if (mouseRayHit.collider.tag.Contains("Item") && myMouse.myState == Mouse_Manager.MouseState.None)
+                {
+                    if (Input.GetMouseButton(0))
+                    {
+                        myInv.AddItem(mouseRayHit.collider.gameObject.GetComponent<Item>());
                     }
                 }
             }
