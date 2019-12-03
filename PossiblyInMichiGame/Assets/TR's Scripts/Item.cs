@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+
+    public bool isCollected, isKnown;
     // Start is called before the first frame update
     void Start()
     {
