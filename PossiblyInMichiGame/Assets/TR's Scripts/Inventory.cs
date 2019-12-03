@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     public Item[] myItems;
     public Sprite[] itemSprites;
     public Item testBaby;
-
+    public Mouse_Manager myMouse;
 
     void Start()
     {
@@ -41,6 +41,11 @@ public class Inventory : MonoBehaviour
         if (Input.GetKey(KeyCode.A))//AddItem Test
         {
             AddItem(testBaby);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            invButtons[3].image.sprite = itemSprites[8];
         }
     }
 
@@ -99,10 +104,42 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void PushItemButton(int whichItem)
+    public void PushItemButton(string thisItem)
     {
-        
+        switch (thisItem)
+        {
+            case "Quarter":
+                invButtons[0].interactable = false;
+                myMouse.SetState(Mouse_Manager.MouseState.Quarter);
+                break;
+            case "Key":
+                invButtons[1].interactable = false;
+                myMouse.SetState(Mouse_Manager.MouseState.Key);
+                break;
+            case "Gum":
+                invButtons[2].interactable = false;
+                myMouse.SetState(Mouse_Manager.MouseState.Gum);
+                break;
+            case "Baby":
+                invButtons[3].interactable = false;
+                myMouse.SetState(Mouse_Manager.MouseState.Baby);
+                break;
+            case "Ear":
+                invButtons[4].interactable = false;
+                myMouse.SetState(Mouse_Manager.MouseState.Ear);
+                break;
+            case "Shoe":
+                invButtons[5].interactable = false;
+                myMouse.SetState(Mouse_Manager.MouseState.Shoe);
+                break;
+            case "Snail":
+                invButtons[6].interactable = false;
+                myMouse.SetState(Mouse_Manager.MouseState.Snail);
+                break;
+            case "Perfume":
+                invButtons[7].interactable = false;
+                myMouse.SetState(Mouse_Manager.MouseState.Perfume);
+                break;
+        }
     }
-    
-    
 }
