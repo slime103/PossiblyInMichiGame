@@ -121,6 +121,10 @@ public class Dialogue_Manager : MonoBehaviour
             currentlyTalkingTo = null; //MUST BE NULL
 
             isTalkingTo = false;
+            if (thisDialogueSequence == dialogueHolder.dialogueCorrectState)
+            {
+                myInv.ReturnItem(dialogueHolder.reward);
+            }
 
         }
         else //Keeps the sequence going

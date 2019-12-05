@@ -19,6 +19,7 @@ public class Dialogue_Holder : MonoBehaviour
     public string[] dialogueCorrectState;
     public string[] characterName; //Name string
     public string character;
+    public Mouse_Manager.MouseState reward;
 
     void Start()
     {
