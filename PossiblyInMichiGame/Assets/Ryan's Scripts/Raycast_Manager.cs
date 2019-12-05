@@ -15,7 +15,7 @@ public class Raycast_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogueManager = GameObject.Find("Dialogue_Manager").GetComponent<Dialogue_Manager>(); //Get the dialogue manager
+        //dialogueManager = GameObject.Find("Dialogue_Manager").GetComponent<Dialogue_Manager>(); //Get the dialogue manager
     }
 
     // Update is called once per frame
@@ -37,9 +37,9 @@ public class Raycast_Manager : MonoBehaviour
             {
                 if (mouseRayHit.collider.CompareTag("NPC"))
                 {
-                
+
                     //Later on I want to add a different mouse hover color so objects are more obviously clickable
-                
+
                     //If left mouse button is clicked:
                     if (Input.GetMouseButton(0))
                     {
@@ -55,6 +55,12 @@ public class Raycast_Manager : MonoBehaviour
                         myInv.AddItem(mouseRayHit.collider.gameObject.GetComponent<Item>());
                     }
                 }
+                else if (mouseRayHit.collider.CompareTag("Arrow"))
+                {
+                mouseRayHit.collider.gameObject.GetComponent<Arrow>().Show();
+                Debug.Log("Hit an arrow");
+                }
+
             }
 
             //For when objects are introduced 
@@ -62,7 +68,17 @@ public class Raycast_Manager : MonoBehaviour
             {
                 
             }*/
-            
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (mouseRayHit.collider.CompareTag("Arrow"))
+                {
+                    string NameOfRoom = mouseRayHit.collider.gameObject.GetComponent<Arrow>().roomName;
+                    Camera.main.transform.position = new Vector3(GameObject.Find(NameOfRoom).transform.position.x,
+                        GameObject.Find(NameOfRoom).transform.position.y, Camera.main.transform.position.z);
+                    Debug.Log("Hit an arrow");
+                }
+            }
+
         }
 
     }

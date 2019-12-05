@@ -9,7 +9,7 @@ TagManager:
   - ItemQuarter
   - ItemGum
   - ItemEar
-  - ItemKey
+  - Arrow
   layers:
   - Default
   - TransparentFX
