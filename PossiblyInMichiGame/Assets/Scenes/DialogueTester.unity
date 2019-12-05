@@ -581,27 +581,13 @@ MonoBehaviour:
   myMouse: {fileID: 0}
   idealState: 4
   taskComplete: 0
-  dialogueTaskIncomplete:
-  - Where is my baby?!
-  - Can you please find my baby
-  dialogueTaskComplete:
-  - Thank you for finding my baby!
-  dialogueIncorrectStateIncomplete:
-  - That's not my baby!
-  - I need my baby!
-  - You fool
-  - You absolute buffoon
-  - You sicken me
-  - Coward
-  - Out of my sight
-  - I'm sorry I was rude
-  - I'm just stressed
-  - Please find my baby, still
-  dialogueIncorrectStateComplete:
-  - I don't need that, I already have my baby!
-  dialogueCorrectState:
-  - My baby!
-  - Thank you!
+  dialogueText: {fileID: 0}
+  welcomeBarks: []
+  dialogue_CorrectItem: []
+  dialogue_Complete_NoItem: []
+  dialogue_Incomplete_Item: []
+  dialogue_Complete_Item: []
+  dialogue_Incomplete_NoItem: []
   characterName:
   - Mom
   - Momma
@@ -730,25 +716,13 @@ MonoBehaviour:
   myMouse: {fileID: 0}
   idealState: 1
   taskComplete: 0
-  dialogueTaskIncomplete:
-  - '.....'
-  - I require....
-  - '...A quarter'
-  dialogueTaskComplete:
-  - Thank you my friend
-  - Now I may be freed from this mortal coil
-  dialogueIncorrectStateIncomplete:
-  - Do you attempt to jest with me, mortal?
-  - That is no quarter
-  - I require a quarter
-  dialogueIncorrectStateComplete:
-  - I do not need this
-  - I do not need anything
-  dialogueCorrectState:
-  - Finally
-  - A quarter!
-  - All my desires have been quenched!
-  - Thank you, my friend
+  dialogueText: {fileID: 4900000, guid: ba34cb41cc12c504bbfe03f37e6bc6fe, type: 3}
+  welcomeBarks: []
+  dialogue_CorrectItem: []
+  dialogue_Complete_NoItem: []
+  dialogue_Incomplete_Item: []
+  dialogue_Complete_Item: []
+  dialogue_Incomplete_NoItem: []
   characterName:
   - Grubby kid
   - Grubby kid
@@ -3300,11 +3274,13 @@ MonoBehaviour:
   myMouse: {fileID: 0}
   idealState: 0
   taskComplete: 0
-  dialogueTaskIncomplete: []
-  dialogueTaskComplete: []
-  dialogueIncorrectStateIncomplete: []
-  dialogueIncorrectStateComplete: []
-  dialogueCorrectState: []
+  dialogueText: {fileID: 0}
+  welcomeBarks: []
+  dialogue_CorrectItem: []
+  dialogue_Complete_NoItem: []
+  dialogue_Incomplete_Item: []
+  dialogue_Complete_Item: []
+  dialogue_Incomplete_NoItem: []
   characterName:
   - Npc
   - NPC

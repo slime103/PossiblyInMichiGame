@@ -69,29 +69,29 @@ public class Dialogue_Manager : MonoBehaviour
             case true:
                 if (myMouse.myState == Mouse_Manager.MouseState.None)
                 {
-                    thisDialogueSequence = dialogueHolder.dialogueTaskComplete;
+                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
                 }
                 else
                 {
                     myInv.ReturnItem(myMouse.myState);
                     myMouse.SetState(Mouse_Manager.MouseState.None);
-                    thisDialogueSequence = dialogueHolder.dialogueIncorrectStateComplete;
+                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
                 }
                 break;
             case false:
                 if (myMouse.myState == Mouse_Manager.MouseState.None)
                 {
-                    thisDialogueSequence = dialogueHolder.dialogueTaskIncomplete;
+                    thisDialogueSequence = dialogueHolder.dialogue_Incomplete_NoItem;
                 }
                 else if (myMouse.myState == dialogueHolder.idealState)
                 {
-                    thisDialogueSequence = dialogueHolder.dialogueCorrectState;
+                    thisDialogueSequence = dialogueHolder.dialogue_CorrectItem;
                     myMouse.SetState(Mouse_Manager.MouseState.None);
                     dialogueHolder.taskComplete = true;
                 }
                 else
                 {
-                    thisDialogueSequence = dialogueHolder.dialogueIncorrectStateIncomplete;
+                    thisDialogueSequence = dialogueHolder.dialogue_Complete_Item;
                     myInv.ReturnItem(myMouse.myState);
                     myMouse.SetState(Mouse_Manager.MouseState.None);
                 }
