@@ -579,18 +579,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myMouse: {fileID: 0}
-  idealState: 0
+  idealState: 4
   taskComplete: 0
-  dialogueTaskIncomplete: []
-  dialogueTaskComplete: []
-  dialogueIncorrectStateIncomplete: []
-  dialogueIncorrectStateComplete: []
-  dialogueCorrectState: []
+  dialogueTaskIncomplete:
+  - Where is my baby?!
+  - Can you please find my baby
+  dialogueTaskComplete:
+  - Thank you for finding my baby!
+  dialogueIncorrectStateIncomplete:
+  - That's not my baby!
+  - I need my baby!
+  - You fool
+  - You absolute buffoon
+  - You sicken me
+  - Coward
+  - Out of my sight
+  - I'm sorry I was rude
+  - I'm just stressed
+  - Please find my baby, still
+  dialogueIncorrectStateComplete:
+  - I don't need that, I already have my baby!
+  dialogueCorrectState:
+  - My baby!
+  - Thank you!
   characterName:
   - Mom
   - Momma
   - Mommy
-  character: 
+  character: Mom
 --- !u!65 &233063024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -712,18 +728,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myMouse: {fileID: 0}
-  idealState: 0
+  idealState: 1
   taskComplete: 0
-  dialogueTaskIncomplete: []
-  dialogueTaskComplete: []
-  dialogueIncorrectStateIncomplete: []
-  dialogueIncorrectStateComplete: []
-  dialogueCorrectState: []
+  dialogueTaskIncomplete:
+  - '.....'
+  - I require....
+  - '...A quarter'
+  dialogueTaskComplete:
+  - Thank you my friend
+  - Now I may be freed from this mortal coil
+  dialogueIncorrectStateIncomplete:
+  - Do you attempt to jest with me, mortal?
+  - That is no quarter
+  - I require a quarter
+  dialogueIncorrectStateComplete:
+  - I do not need this
+  - I do not need anything
+  dialogueCorrectState:
+  - Finally
+  - A quarter!
+  - All my desires have been quenched!
+  - Thank you, my friend
   characterName:
   - Grubby kid
   - Grubby kid
   - Player
-  character: 
+  character: Grubby Boy
 --- !u!1 &452967390
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +1982,8 @@ MonoBehaviour:
   isTalkingTo: 0
   dialogueHolder: {fileID: 0}
   thisDialogueSequence: []
-  myMouse: {fileID: 0}
+  myMouse: {fileID: 1256330685}
+  myInv: {fileID: 0}
 --- !u!4 &969393408
 Transform:
   m_ObjectHideFlags: 0
@@ -2296,7 +2327,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d1f184cbafe5043fca86f11eab657b3a, type: 3}
   - {fileID: 21300000, guid: eee89baea36f74f319298a4ba7c81ba0, type: 3}
   - {fileID: 21300000, guid: 3c906d54273b64f77adcb2d3fa2a9cab, type: 3}
-  - {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   myState: 0
 --- !u!4 &1256330686
 Transform:

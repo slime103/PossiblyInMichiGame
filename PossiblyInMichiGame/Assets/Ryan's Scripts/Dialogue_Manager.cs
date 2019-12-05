@@ -36,6 +36,7 @@ public class Dialogue_Manager : MonoBehaviour
     public Dialogue_Holder dialogueHolder; //Taking the script that's on the NPCS
     public string[] thisDialogueSequence;
     public Mouse_Manager myMouse;
+    public Inventory myInv;
 
     
     // Start is called before the first frame update
@@ -72,6 +73,8 @@ public class Dialogue_Manager : MonoBehaviour
                 }
                 else
                 {
+                    myInv.ReturnItem(myMouse.myState);
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
                     thisDialogueSequence = dialogueHolder.dialogueIncorrectStateComplete;
                 }
                 break;
@@ -83,10 +86,13 @@ public class Dialogue_Manager : MonoBehaviour
                 else if (myMouse.myState == dialogueHolder.idealState)
                 {
                     thisDialogueSequence = dialogueHolder.dialogueCorrectState;
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
                 }
                 else
                 {
                     thisDialogueSequence = dialogueHolder.dialogueIncorrectStateIncomplete;
+                    myInv.ReturnItem(myMouse.myState);
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
                 }
                 break;
         }
