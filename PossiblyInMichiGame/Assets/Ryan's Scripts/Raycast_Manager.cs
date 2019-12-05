@@ -33,7 +33,7 @@ public class Raycast_Manager : MonoBehaviour
         // Make the ray
         if (Physics.Raycast(mouseRay, out mouseRayHit, maxDistance)) 
         {
-            /*if (dialogueManager.isTalkingTo == false)
+            if (dialogueManager.isTalkingTo == false)
             {
                 if (mouseRayHit.collider.CompareTag("NPC"))
                 {
@@ -54,14 +54,13 @@ public class Raycast_Manager : MonoBehaviour
                         myInv.AddItem(mouseRayHit.collider.gameObject.GetComponent<Item>());
                     }
                 }
-                else */
-            if (mouseRayHit.collider.CompareTag("Arrow"))
-            {
+                else if (mouseRayHit.collider.CompareTag("Arrow"))
+                {
                 mouseRayHit.collider.gameObject.GetComponent<Arrow>().Show();
                 Debug.Log("Hit an arrow");
-            }
+                }
 
-            //}
+            }
 
             //For when objects are introduced 
             /*if (mouseRayHit.collider.CompareTag("Object"))
