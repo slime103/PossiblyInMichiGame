@@ -134,7 +134,7 @@ public class Dialogue_Manager : MonoBehaviour
             currentlyTalkingTo = null; //MUST BE NULL
 
             isTalkingTo = false;
-            if (thisDialogueSequence == dialogueHolder.dialogueCorrectState && dialogueHolder.reward != Mouse_Manager.MouseState.None)
+            if (thisDialogueSequence == dialogueHolder.dialogue_CorrectItem && dialogueHolder.reward != Mouse_Manager.MouseState.None)
             {
                 myInv.ReturnItem(dialogueHolder.reward);
             }

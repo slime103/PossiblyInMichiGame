@@ -11,6 +11,9 @@
           <e p="Dialogue_Manager.cs" t="Include" />
           <e p="Raycast_Manager.cs" t="Include" />
         </e>
+        <e p="Text" t="Include">
+          <e p="grubbyKid.txt" t="Include" />
+        </e>
         <e p="TR's Scripts" t="Include">
           <e p="CameraManager.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
