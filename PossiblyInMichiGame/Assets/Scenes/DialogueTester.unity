@@ -811,7 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 0}
+  myMouse: {fileID: 1256330685}
   idealState: 4
   taskComplete: 0
   dialogueText: {fileID: 0}
@@ -961,7 +961,7 @@ GameObject:
   - component: {fileID: 338299953}
   - component: {fileID: 338299952}
   m_Layer: 0
-  m_Name: toothless-iStock-511192858-705x384
+  m_Name: Mouth Zone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1137,10 +1137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 0}
+  myMouse: {fileID: 1256330685}
   idealState: 1
   taskComplete: 0
-  dialogueText: {fileID: 4900000, guid: ba34cb41cc12c504bbfe03f37e6bc6fe, type: 3}
+  dialogueText: {fileID: 0}
   welcomeBarks: []
   dialogue_CorrectItem: []
   dialogue_Complete_NoItem: []
@@ -1152,7 +1152,7 @@ MonoBehaviour:
   - Grubby kid
   - Player
   character: Grubby Boy
-  reward: 0
+  reward: 3
   manualTransport: 0
   destination: 
 --- !u!1 &452967390
@@ -1343,19 +1343,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 0}
+  myMouse: {fileID: 1256330685}
   idealState: 2
   taskComplete: 0
-  dialogueTaskIncomplete: []
-  dialogueTaskComplete: []
-  dialogueIncorrectStateIncomplete: []
-  dialogueIncorrectStateComplete: []
-  dialogueCorrectState: []
+  dialogueText: {fileID: 0}
+  welcomeBarks: []
+  dialogue_CorrectItem: []
+  dialogue_Complete_NoItem: []
+  dialogue_Incomplete_Item: []
+  dialogue_Complete_Item: []
+  dialogue_Incomplete_NoItem: []
   characterName: []
   character: 
   reward: 0
-  manualTransport: 0
-  destination: 
+  manualTransport: 1
+  destination: Elevator Mouth Going Up
 --- !u!65 &563485268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1620,7 +1622,7 @@ GameObject:
   - component: {fileID: 664853271}
   - component: {fileID: 664853270}
   m_Layer: 0
-  m_Name: r491q5_large
+  m_Name: Business Boy
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1683,7 +1685,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664853267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 42.99, y: -28.501, z: 0}
+  m_LocalPosition: {x: 42.99, y: -28.501, z: -2}
   m_LocalScale: {x: 2.62392, y: 2.62392, z: 2.62392}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1714,14 +1716,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 0}
+  myMouse: {fileID: 1256330685}
   idealState: 0
   taskComplete: 0
-  dialogueTaskIncomplete: []
-  dialogueTaskComplete: []
-  dialogueIncorrectStateIncomplete: []
-  dialogueIncorrectStateComplete: []
-  dialogueCorrectState: []
+  dialogueText: {fileID: 0}
+  welcomeBarks: []
+  dialogue_CorrectItem: []
+  dialogue_Complete_NoItem: []
+  dialogue_Incomplete_Item: []
+  dialogue_Complete_Item: []
+  dialogue_Incomplete_NoItem: []
   characterName: []
   character: 
   reward: 0
@@ -3404,16 +3408,18 @@ MonoBehaviour:
   myMouse: {fileID: 1256330685}
   idealState: 2
   taskComplete: 0
-  dialogueTaskIncomplete:
-  - Task incomplete
-  dialogueTaskComplete:
-  - task complete
-  dialogueIncorrectStateIncomplete:
-  - incorrect state incomplete
-  dialogueIncorrectStateComplete:
-  - incorrect state complete
-  dialogueCorrectState:
-  - correct state
+  dialogueText: {fileID: 0}
+  welcomeBarks: []
+  dialogue_CorrectItem:
+  - Correct
+  dialogue_Complete_NoItem:
+  - Complete No Item
+  dialogue_Incomplete_Item:
+  - Incomplete Item
+  dialogue_Complete_Item:
+  - Complete Item
+  dialogue_Incomplete_NoItem:
+  - Incomplete No Item
   characterName: []
   character: Perfume Boy
   reward: 8
@@ -4133,11 +4139,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3157702707671436242, guid: 0de2c259627b91040a325229bc51f962,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.2
-      objectReference: {fileID: 0}
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
@@ -4147,6 +4148,11 @@ PrefabInstance:
         type: 3}
       propertyPath: roomName
       value: wheat
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157702707671436242, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0de2c259627b91040a325229bc51f962, type: 3}
@@ -4450,7 +4456,7 @@ GameObject:
   - component: {fileID: 1401189846}
   - component: {fileID: 1401189845}
   m_Layer: 0
-  m_Name: 5HYdrDsenbowySwd8WnARf-320-80
+  m_Name: N O S E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5037,9 +5043,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1565190245}
   - component: {fileID: 1565190244}
+  - component: {fileID: 1565190247}
+  - component: {fileID: 1565190246}
   m_Layer: 0
   m_Name: IconBaby
-  m_TagString: Untagged
+  m_TagString: ItemBaby
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5107,6 +5115,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1565190246
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565190243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.96, y: 6.44, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1565190247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565190243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf99a03cb5f0b44548f5a6a628d2de7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCollected: 0
+  isKnown: 0
 --- !u!1001 &1567819661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5662,14 +5697,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 0}
+  myMouse: {fileID: 1256330685}
   idealState: 6
   taskComplete: 0
-  dialogueTaskIncomplete: []
-  dialogueTaskComplete: []
-  dialogueIncorrectStateIncomplete: []
-  dialogueIncorrectStateComplete: []
-  dialogueCorrectState: []
+  dialogueText: {fileID: 0}
+  welcomeBarks: []
+  dialogue_CorrectItem: []
+  dialogue_Complete_NoItem: []
+  dialogue_Incomplete_Item: []
+  dialogue_Complete_Item: []
+  dialogue_Incomplete_NoItem: []
   characterName: []
   character: 
   reward: 9
@@ -5985,7 +6022,7 @@ GameObject:
   - component: {fileID: 1840730141}
   - component: {fileID: 1840730140}
   m_Layer: 0
-  m_Name: download
+  m_Name: Chewing Character
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6082,11 +6119,13 @@ MonoBehaviour:
   myMouse: {fileID: 0}
   idealState: 0
   taskComplete: 0
-  dialogueTaskIncomplete: []
-  dialogueTaskComplete: []
-  dialogueIncorrectStateIncomplete: []
-  dialogueIncorrectStateComplete: []
-  dialogueCorrectState: []
+  dialogueText: {fileID: 0}
+  welcomeBarks: []
+  dialogue_CorrectItem: []
+  dialogue_Complete_NoItem: []
+  dialogue_Incomplete_Item: []
+  dialogue_Complete_Item: []
+  dialogue_Incomplete_NoItem: []
   characterName: []
   character: 
   reward: 0
@@ -6479,7 +6518,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ecfc1c9635b44423c9d2ac5282e4b9b0, type: 3}
   - {fileID: 21300000, guid: cea65105761d14c078d5ed091dd68d17, type: 3}
   - {fileID: 21300000, guid: f139b7c4994c14ac6b9d8959574d294c, type: 3}
-  - {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10917, guid: 0000000000000000f000000000000000, type: 3}
   testBaby: {fileID: 0}
   myMouse: {fileID: 1256330685}
 --- !u!1 &1975120118
@@ -6726,7 +6765,7 @@ GameObject:
   - component: {fileID: 2133513510}
   - component: {fileID: 2133513509}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Nose Void
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6885,7 +6924,7 @@ PrefabInstance:
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Elevator Mouth
+      value: Lower Elevator
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0de2c259627b91040a325229bc51f962, type: 3}
