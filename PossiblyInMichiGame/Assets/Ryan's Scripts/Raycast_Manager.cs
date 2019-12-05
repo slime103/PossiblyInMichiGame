@@ -43,12 +43,13 @@ public class Raycast_Manager : MonoBehaviour
                     //If left mouse button is clicked:
                     if (Input.GetMouseButton(0))
                     {
-                        dialogueManager.SetCharacter(mouseRayHit.collider.gameObject); //Gets the dialogue holder from the Character
+                        dialogueManager.SetCharacter(mouseRayHit.collider.gameObject, myMouse.myState); //Gets the dialogue holder from the Character
                         dialogueManager.dialogueBox.SetActive(true); //Turns on the dialogue box
                     }
                 }
                 else if (mouseRayHit.collider.tag.Contains("Item") && myMouse.myState == Mouse_Manager.MouseState.None)
                 {
+                    Debug.Log("There's an item here");
                     if (Input.GetMouseButton(0))
                     {
                         myInv.AddItem(mouseRayHit.collider.gameObject.GetComponent<Item>());

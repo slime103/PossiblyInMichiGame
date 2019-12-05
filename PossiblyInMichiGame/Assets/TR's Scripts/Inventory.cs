@@ -55,7 +55,7 @@ public class Inventory : MonoBehaviour
         {
             case "ItemQuarter": //Not really ever used but just made for completion
                 invButtons[0].interactable = true;
-                invButtons[0].image.sprite = itemSprites[1];
+                invButtons[0].image.sprite = itemSprites[0];
                 collected[0] = true;
                 Destroy(thisItem.gameObject);
                 break;
