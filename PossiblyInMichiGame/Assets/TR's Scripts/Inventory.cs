@@ -53,9 +53,6 @@ public class Inventory : MonoBehaviour
     {
         switch (state)
         {
-            case Mouse_Manager.MouseState.None:
-                Debug.Log("You got nothing");
-                break;
             case Mouse_Manager.MouseState.Quarter:
                 invButtons[0].interactable = true;
                 invButtons[0].image.sprite = itemSprites[0];

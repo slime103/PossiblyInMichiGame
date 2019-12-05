@@ -37,6 +37,7 @@ public class Dialogue_Manager : MonoBehaviour
     public string[] thisDialogueSequence;
     public Mouse_Manager myMouse;
     public Inventory myInv;
+    public CameraManager camera;
 
     
     // Start is called before the first frame update
@@ -99,7 +100,15 @@ public class Dialogue_Manager : MonoBehaviour
         }
 
         SetSequence(0); //Resets the Sequence for every new character
+    }
 
+    public void Bark(Dialogue_Holder whichChar)
+    {
+        isTalkingTo = true;
+        currentlyTalkingTo = whichChar.gameObject;
+        dialogueHolder = whichChar;
+        //set this dialogue to the barks
+        SetSequence(0);
     }
 
     //Called when button is clicked
@@ -121,9 +130,14 @@ public class Dialogue_Manager : MonoBehaviour
             currentlyTalkingTo = null; //MUST BE NULL
 
             isTalkingTo = false;
-            if (thisDialogueSequence == dialogueHolder.dialogueCorrectState)
+            if (thisDialogueSequence == dialogueHolder.dialogueCorrectState && dialogueHolder.reward != Mouse_Manager.MouseState.None)
             {
                 myInv.ReturnItem(dialogueHolder.reward);
+            }
+
+            if (dialogueHolder.manualTransport)
+            {
+                camera.MoveToRoom(dialogueHolder.destination);
             }
 
         }

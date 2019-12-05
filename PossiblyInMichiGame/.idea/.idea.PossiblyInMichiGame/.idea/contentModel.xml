@@ -15,6 +15,7 @@
           <e p="Inventory.cs" t="Include" />
           <e p="Item.cs" t="Include" />
           <e p="Mouse_Manager.cs" t="Include" />
+          <e p="Room.cs" t="Include" />
         </e>
         <e p="Z's Scripts" t="Include">
           <e p="Arrow.cs" t="Include" />

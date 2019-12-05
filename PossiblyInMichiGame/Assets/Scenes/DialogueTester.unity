@@ -2361,6 +2361,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowOverlay (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8812633024251676782, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1985217545850916828, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2435,6 +2440,11 @@ PrefabInstance:
         type: 3}
       propertyPath: roomName
       value: Gumball Machine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: roomName
+      value: Background_Axel_5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0de2c259627b91040a325229bc51f962, type: 3}
@@ -2790,6 +2800,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ArrowOverlay (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8812633024251676782, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1985217545850916828, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -3150,6 +3165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowOverlay (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8812633024251676782, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1985217545850916828, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3452,6 +3472,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowOverlay (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8812633024251676782, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1985217545850916828, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3622,6 +3647,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ArrowOverlay (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8812633024251676782, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1985217545850916828, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -4652,6 +4682,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowOverlay (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8812633024251676782, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1985217545850916828, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4721,6 +4756,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.53546834
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: roomName
+      value: Background_Axel_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: roomName
+      value: Gumball Machine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0de2c259627b91040a325229bc51f962, type: 3}
@@ -4892,6 +4937,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.53546834
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: roomName
+      value: Gumball Machine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: roomName
+      value: Elevator
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0de2c259627b91040a325229bc51f962, type: 3}

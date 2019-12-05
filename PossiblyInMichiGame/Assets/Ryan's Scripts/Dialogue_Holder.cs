@@ -20,6 +20,8 @@ public class Dialogue_Holder : MonoBehaviour
     public string[] characterName; //Name string
     public string character;
     public Mouse_Manager.MouseState reward;
+    public bool manualTransport;
+    public string destination;
 
     void Start()
     {

@@ -3,48 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="baef9d75-8308-4558-9b51-30a2f6fff56b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character_Axel_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character_Axel_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character_Axel_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character_Axel_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character_Axel_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character_Axel_3.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DialogueTester.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DialogueTester.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorBaby.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorBaby.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorEar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorEar.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorGum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorGum.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorKey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorKey.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorPerfume.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorPerfume.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorQuarter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorQuarter.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorShoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorShoe.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorSnail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/CursorSnail.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconBaby.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconBaby.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconEar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconEar.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconGum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconGum.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconKey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconKey.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconPerfume.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconPerfume.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconQuarter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconQuarter.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconShoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconShoe.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconSnail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/IconSnail.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Z's Scripts/CameraManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Z's Scripts/CameraManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,18 +41,22 @@
     <setting file="file://$PROJECT_DIR$/Assets/TR's Scripts/Item.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Z's Scripts/Arrow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TR's Scripts/Mouse_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Z's Scripts/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Z's Scripts/DialogueImporter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TR's Scripts/Room.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/TR's Scripts/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" />
         <option value="$PROJECT_DIR$/Assets/TR's Scripts/Mouse_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" />
-        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Room.cs" />
+        <option value="$PROJECT_DIR$/Assets/Z's Scripts/CameraManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" />
       </list>
     </option>
@@ -155,7 +123,7 @@
       <workItem from="1574372806318" duration="803000" />
       <workItem from="1575403229979" duration="4397000" />
       <workItem from="1575564399269" duration="3536000" />
-      <workItem from="1575576894242" duration="653000" />
+      <workItem from="1575576894242" duration="1905000" />
     </task>
     <servers />
   </component>

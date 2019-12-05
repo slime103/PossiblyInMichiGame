@@ -11,6 +11,7 @@ public class Raycast_Manager : MonoBehaviour
     public Dialogue_Manager dialogueManager; //Get the dialogue manager
     public Mouse_Manager myMouse;
     public Inventory myInv;
+    public CameraManager camera;
     
     // Start is called before the first frame update
     void Start()
@@ -73,6 +74,7 @@ public class Raycast_Manager : MonoBehaviour
                 if (mouseRayHit.collider.CompareTag("Arrow"))
                 {
                     string NameOfRoom = mouseRayHit.collider.gameObject.GetComponent<Arrow>().roomName;
+                    camera.MoveToRoom(NameOfRoom);
                     Camera.main.transform.position = new Vector3(GameObject.Find(NameOfRoom).transform.position.x,
                         GameObject.Find(NameOfRoom).transform.position.y, Camera.main.transform.position.z);
                     Debug.Log("Hit an arrow");
