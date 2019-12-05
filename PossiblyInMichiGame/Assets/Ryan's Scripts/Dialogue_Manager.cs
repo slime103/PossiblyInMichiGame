@@ -87,6 +87,7 @@ public class Dialogue_Manager : MonoBehaviour
                 {
                     thisDialogueSequence = dialogueHolder.dialogueCorrectState;
                     myMouse.SetState(Mouse_Manager.MouseState.None);
+                    dialogueHolder.taskComplete = true;
                 }
                 else
                 {
