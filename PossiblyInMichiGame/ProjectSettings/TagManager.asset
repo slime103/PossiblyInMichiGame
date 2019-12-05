@@ -11,6 +11,8 @@ TagManager:
   - ItemEar
   - Arrow
   - ItemKey
+  - ElevatorDown
+  - ElevatorUp
   layers:
   - Default
   - TransparentFX

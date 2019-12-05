@@ -89,6 +89,10 @@ public class Dialogue_Manager : MonoBehaviour
                     thisDialogueSequence = dialogueHolder.dialogueCorrectState;
                     myMouse.SetState(Mouse_Manager.MouseState.None);
                     dialogueHolder.taskComplete = true;
+                    if (dialogueHolder.character == "Elevator Man")
+                    {
+                        dialogueHolder.gameObject.tag = "ElevatorUp";
+                    }
                 }
                 else
                 {
@@ -134,7 +138,6 @@ public class Dialogue_Manager : MonoBehaviour
             {
                 myInv.ReturnItem(dialogueHolder.reward);
             }
-
             if (dialogueHolder.manualTransport)
             {
                 camera.MoveToRoom(dialogueHolder.destination);
