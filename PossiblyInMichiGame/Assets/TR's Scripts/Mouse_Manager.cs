@@ -25,7 +25,7 @@ public class Mouse_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myState = MouseState.None;
+        SetState(MouseState.None);
     }
 
     // Update is called once per frame
@@ -43,7 +43,7 @@ public class Mouse_Manager : MonoBehaviour
                 Cursor.SetCursor(itemSprites[8].texture, Vector2.zero, CursorMode.Auto);
                 break;
             case MouseState.Quarter:
-                Cursor.SetCursor(itemSprites[0].texture, Vector2.zero, CursorMode.Auto);
+                Cursor.SetCursor(itemSprites[0].texture, new Vector2(50, 50), CursorMode.Auto);
                 break;
             case MouseState.Key:
                 Cursor.SetCursor(itemSprites[1].texture, Vector2.zero, CursorMode.Auto);

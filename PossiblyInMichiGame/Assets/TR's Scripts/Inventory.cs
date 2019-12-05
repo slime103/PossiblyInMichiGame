@@ -49,13 +49,60 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void ReturnItem(Mouse_Manager.MouseState state)
+    {
+        switch (state)
+        {
+            case Mouse_Manager.MouseState.Quarter:
+                invButtons[0].interactable = true;
+                invButtons[0].image.sprite = itemSprites[0];
+                collected[0] = true;
+                break;
+            case Mouse_Manager.MouseState.Key:
+                invButtons[1].interactable = true;
+                invButtons[1].image.sprite = itemSprites[1];
+                collected[1] = true;
+                break;
+            case Mouse_Manager.MouseState.Gum:
+                invButtons[2].interactable = true;
+                invButtons[2].image.sprite = itemSprites[2];
+                collected[2] = true;
+                break;
+            case Mouse_Manager.MouseState.Baby:
+                invButtons[3].interactable = true;
+                invButtons[3].image.sprite = itemSprites[3];
+                collected[3] = true;
+                break;
+            case Mouse_Manager.MouseState.Ear:
+                invButtons[4].interactable = true;
+                invButtons[4].image.sprite = itemSprites[4];
+                collected[4] = true;
+                break;
+            case Mouse_Manager.MouseState.Shoe:
+                invButtons[5].interactable = true;
+                invButtons[5].image.sprite = itemSprites[5];
+                collected[5] = true;
+                break;
+            case Mouse_Manager.MouseState.Snail:
+                invButtons[6].interactable = true;
+                invButtons[6].image.sprite = itemSprites[6];
+                collected[6] = true;
+                break;
+            case Mouse_Manager.MouseState.Perfume:
+                invButtons[7].interactable = true;
+                invButtons[7].image.sprite = itemSprites[7];
+                collected[7] = true;
+                break;
+        }
+    }
+
     public void AddItem(Item thisItem)
     {
         switch (thisItem.gameObject.tag)
         {
             case "ItemQuarter": //Not really ever used but just made for completion
                 invButtons[0].interactable = true;
-                invButtons[0].image.sprite = itemSprites[1];
+                invButtons[0].image.sprite = itemSprites[0];
                 collected[0] = true;
                 Destroy(thisItem.gameObject);
                 break;
@@ -111,34 +158,42 @@ public class Inventory : MonoBehaviour
             case "Quarter":
                 invButtons[0].interactable = false;
                 myMouse.SetState(Mouse_Manager.MouseState.Quarter);
+                invButtons[0].image.sprite = itemSprites[8];
                 break;
             case "Key":
                 invButtons[1].interactable = false;
                 myMouse.SetState(Mouse_Manager.MouseState.Key);
+                invButtons[1].image.sprite = itemSprites[8];
                 break;
             case "Gum":
                 invButtons[2].interactable = false;
                 myMouse.SetState(Mouse_Manager.MouseState.Gum);
+                invButtons[2].image.sprite = itemSprites[8];
                 break;
             case "Baby":
                 invButtons[3].interactable = false;
                 myMouse.SetState(Mouse_Manager.MouseState.Baby);
+                invButtons[3].image.sprite = itemSprites[8];
                 break;
             case "Ear":
                 invButtons[4].interactable = false;
                 myMouse.SetState(Mouse_Manager.MouseState.Ear);
+                invButtons[4].image.sprite = itemSprites[8];
                 break;
             case "Shoe":
                 invButtons[5].interactable = false;
                 myMouse.SetState(Mouse_Manager.MouseState.Shoe);
+                invButtons[5].image.sprite = itemSprites[8];
                 break;
             case "Snail":
                 invButtons[6].interactable = false;
                 myMouse.SetState(Mouse_Manager.MouseState.Snail);
+                invButtons[6].image.sprite = itemSprites[8];
                 break;
             case "Perfume":
                 invButtons[7].interactable = false;
                 myMouse.SetState(Mouse_Manager.MouseState.Perfume);
+                invButtons[7].image.sprite = itemSprites[8];
                 break;
         }
     }
