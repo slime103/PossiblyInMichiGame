@@ -8,19 +8,24 @@ public class Arrow : MonoBehaviour
 
     public SpriteRenderer sr;
 
+    public bool isHidden = true;
+
     public void Start() //starts invisible
     {
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.white;
+        Hide();
     }
 
     public void Show() //Sets the sprite to be shaded
     {
         sr.color = Color.white;
+        isHidden = false;
     }
 
     public void Hide() //Turns the alpha to 0 making the arow invisible
     {
         sr.color = Color.clear;
+        isHidden = true;
     }
 }
