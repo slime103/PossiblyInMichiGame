@@ -12,11 +12,16 @@ public class Arrow : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.white;
+        Hide();
     }
 
     public void Show() //Sets the sprite to be shaded
     {
         sr.color = Color.white;
+        /*do
+        {
+            sr.color -= new Color(0.01f, 0.01f, 0.01f, 0.01f);
+        } while (sr.color != Color.clear);*/
     }
 
     public void Hide() //Turns the alpha to 0 making the arow invisible

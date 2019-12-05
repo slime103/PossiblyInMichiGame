@@ -34,6 +34,9 @@ public class Dialogue_Manager : MonoBehaviour
     
     //Scripts
     public Dialogue_Holder dialogueHolder; //Taking the script that's on the NPCS
+    public string[] thisDialogueSequence;
+    public Mouse_Manager myMouse;
+    public Inventory myInv;
 
     
     // Start is called before the first frame update
@@ -49,7 +52,7 @@ public class Dialogue_Manager : MonoBehaviour
     }
     
     //Easily sets the NPC
-    public void SetCharacter(GameObject NPC)
+    public void SetCharacter(GameObject NPC, Mouse_Manager.MouseState state)
     {
        
         //Add in bool so that there is no restarting the dialogue
@@ -60,7 +63,40 @@ public class Dialogue_Manager : MonoBehaviour
         currentlyTalkingTo = NPC; //Set currentlyTalkingTo from null to whatever the NPC is
 
         dialogueHolder = NPC.GetComponent<Dialogue_Holder>(); //Take the Dialogue Holder from the NPC
-        
+
+        switch (dialogueHolder.taskComplete)
+        {
+            case true:
+                if (myMouse.myState == Mouse_Manager.MouseState.None)
+                {
+                    thisDialogueSequence = dialogueHolder.dialogueTaskComplete;
+                }
+                else
+                {
+                    myInv.ReturnItem(myMouse.myState);
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
+                    thisDialogueSequence = dialogueHolder.dialogueIncorrectStateComplete;
+                }
+                break;
+            case false:
+                if (myMouse.myState == Mouse_Manager.MouseState.None)
+                {
+                    thisDialogueSequence = dialogueHolder.dialogueTaskIncomplete;
+                }
+                else if (myMouse.myState == dialogueHolder.idealState)
+                {
+                    thisDialogueSequence = dialogueHolder.dialogueCorrectState;
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
+                }
+                else
+                {
+                    thisDialogueSequence = dialogueHolder.dialogueIncorrectStateIncomplete;
+                    myInv.ReturnItem(myMouse.myState);
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
+                }
+                break;
+        }
+
         SetSequence(0); //Resets the Sequence for every new character
 
     }
@@ -72,7 +108,7 @@ public class Dialogue_Manager : MonoBehaviour
         
         Debug.Log(sequenceNumber); //Keep track of the sequences
         
-        if (sequenceNumber >= dialogueHolder.dialogue.Length) //Resets everything once array is over
+        if (sequenceNumber >= thisDialogueSequence.Length) //Resets everything once array is over
         {
             Debug.Log("conversation over");
             
@@ -99,11 +135,11 @@ public class Dialogue_Manager : MonoBehaviour
     {
         Debug.Log("Start conversation");
         
-        dialogueText.text = dialogueHolder.dialogue[sequenceNumber]; //Connects the strings to the texts to the sequence
+        dialogueText.text = thisDialogueSequence[sequenceNumber]; //Connects the strings to the texts to the sequence
 
-        nameText.text = dialogueHolder.characterName[sequenceNumber]; //Connects the strings to the texts to the sequence
+        nameText.text = dialogueHolder.character; //Connects the strings to the texts to the sequence
         
-        Debug.Log(sequenceNumber); 
+        Debug.Log(sequenceNumber);
 
     }
 }
