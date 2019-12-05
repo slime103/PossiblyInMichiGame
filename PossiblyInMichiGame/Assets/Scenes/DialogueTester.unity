@@ -1983,7 +1983,7 @@ MonoBehaviour:
   dialogueHolder: {fileID: 0}
   thisDialogueSequence: []
   myMouse: {fileID: 1256330685}
-  myInv: {fileID: 0}
+  myInv: {fileID: 1970482344}
 --- !u!4 &969393408
 Transform:
   m_ObjectHideFlags: 0

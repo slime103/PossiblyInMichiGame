@@ -25,7 +25,7 @@ public class Mouse_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myState = MouseState.None;
+        SetState(MouseState.None);
     }
 
     // Update is called once per frame
