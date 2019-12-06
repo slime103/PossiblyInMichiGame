@@ -134,15 +134,21 @@ public class Dialogue_Manager : MonoBehaviour
             currentlyTalkingTo = null; //MUST BE NULL
 
             isTalkingTo = false;
-            if (thisDialogueSequence == dialogueHolder.dialogue_CorrectItem && dialogueHolder.reward != Mouse_Manager.MouseState.None)
+            if (thisDialogueSequence == dialogueHolder.dialogue_CorrectItem)
             {
-                myInv.ReturnItem(dialogueHolder.reward);
+                if (dialogueHolder.reward != Mouse_Manager.MouseState.None)
+                {
+                    myInv.ReturnItem(dialogueHolder.reward);
+                }
+                if (dialogueHolder.unlockArrow)
+                {
+                    dialogueHolder.toUnlock.unlocked = true;
+                }
+                if (dialogueHolder.manualTransport)
+                {
+                    camera.MoveToRoom(dialogueHolder.destination);
+                }
             }
-            if (dialogueHolder.manualTransport)
-            {
-                camera.MoveToRoom(dialogueHolder.destination);
-            }
-
         }
         else //Keeps the sequence going
         {

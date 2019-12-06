@@ -22,8 +22,9 @@ public class Dialogue_Holder : MonoBehaviour
     public string[] characterName; //Name string
     public string character;
     public Mouse_Manager.MouseState reward;
-    public bool manualTransport;
+    public bool manualTransport, unlockArrow;
     public string destination;
+    public Arrow toUnlock;
 
     void Start()
     {

@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour
                 invButtons[i].interactable = false;
             }
         }
+        ReturnItem(Mouse_Manager.MouseState.Quarter);
     }
     
     void Update()
