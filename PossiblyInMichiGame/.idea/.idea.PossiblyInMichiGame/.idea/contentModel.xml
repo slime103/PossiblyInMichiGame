@@ -16,6 +16,7 @@
         </e>
         <e p="TR's Scripts" t="Include">
           <e p="CameraManager.cs" t="Include" />
+          <e p="ElevatorScript.cs" t="Include" />
           <e p="Inventory.cs" t="Include" />
           <e p="Item.cs" t="Include" />
           <e p="Mouse_Manager.cs" t="Include" />
