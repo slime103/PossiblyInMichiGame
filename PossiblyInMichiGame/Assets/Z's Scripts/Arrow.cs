@@ -7,6 +7,8 @@ public class Arrow : MonoBehaviour
     public string roomName; //stores the name of the room the arrow will take you to when clicked
 
     public SpriteRenderer sr;
+    
+    public bool unlocked;
 
     public void Start() //starts invisible
     {

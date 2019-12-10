@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //INTENT: Basic raycast for picking up objects and talking to NPCS
 //USAGE: Put this on a raycast manager to use inventory objects, pick up things or talk to people
@@ -12,6 +13,7 @@ public class Raycast_Manager : MonoBehaviour
     public Mouse_Manager myMouse;
     public Inventory myInv;
     public CameraManager camera;
+    public ElevatorScript upElevator, downElevator;
     
     // Start is called before the first frame update
     void Start()
@@ -71,21 +73,35 @@ public class Raycast_Manager : MonoBehaviour
             }*/
             if (Input.GetMouseButtonDown(0))
             {
-                if (mouseRayHit.collider.CompareTag("Arrow"))
+                if (mouseRayHit.collider.CompareTag("Arrow") && mouseRayHit.collider.gameObject.GetComponent<Arrow>().unlocked)
                 {
                     string NameOfRoom = mouseRayHit.collider.gameObject.GetComponent<Arrow>().roomName;
                     camera.MoveToRoom(NameOfRoom);
-                    Camera.main.transform.position = new Vector3(GameObject.Find(NameOfRoom).transform.position.x,
-                        GameObject.Find(NameOfRoom).transform.position.y, Camera.main.transform.position.z);
+                   
                     Debug.Log("Hit an arrow");
                 }
                 else if (mouseRayHit.collider.CompareTag("ElevatorUp"))
                 {
-                    
+                    camera.MoveToRoom("Elevator Mouth Going Up");
+                    upElevator.UseElevator("Upper Elevator");
                 }
                 else if (mouseRayHit.collider.CompareTag("ElevatorDown"))
                 {
-                    
+                    camera.MoveToRoom("Elevator Mouth Going Down");
+                    downElevator.UseElevator("Lower Elevator");
+                }
+                else if (mouseRayHit.collider.CompareTag("Nose"))
+                {
+                    if (myMouse.myState == Mouse_Manager.MouseState.Perfume)
+                    {
+                        SceneManager.LoadScene("WinScreen");
+                    }
+                    else if (myMouse.myState != Mouse_Manager.MouseState.Perfume &&
+                             myMouse.myState != Mouse_Manager.MouseState.None)
+                    {
+                        myInv.ReturnItem(myMouse.myState);
+                        myMouse.SetState(Mouse_Manager.MouseState.None);
+                    }
                 }
             }
 
