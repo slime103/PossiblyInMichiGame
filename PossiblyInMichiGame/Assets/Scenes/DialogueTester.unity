@@ -289,7 +289,7 @@ PrefabInstance:
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Lower Elevator
+      value: Don's Low-Calorie Carpets
       objectReference: {fileID: 0}
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -299,7 +299,7 @@ PrefabInstance:
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Don's Low-Calorie Carpets
+      value: Lower Elevator
       objectReference: {fileID: 0}
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -5562,7 +5562,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e4d6a8a5a573c4b61af051a10b0281b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 843f0243739c44aaeba3caa19dc81717, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7217,7 +7217,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2d14d39a90c004c62a44e9fa4febffee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0167f0ccf19a8475e85af34b422b7a2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
