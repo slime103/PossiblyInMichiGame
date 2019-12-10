@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomName: river
   sr: {fileID: 0}
-  isHidden: 1
+  unlocked: 0
 --- !u!65 &4377837383566220489
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -108,8 +108,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11.430833, y: 73.25418, z: 0.2}
-  m_Center: {x: -0.15973046, y: 0.15971467, z: 0.0000009525073}
+  m_Size: {x: 11.430833, y: 12.821535, z: 0.2}
+  m_Center: {x: -0.15973046, y: -1.0993357, z: 0.0000009525073}
 --- !u!1 &7104955654288395523
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomName: lake
   sr: {fileID: 0}
-  isHidden: 1
+  unlocked: 0
 --- !u!65 &9193535552570139518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -218,8 +218,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.659907, y: 72.80412, z: 0.2}
-  m_Center: {x: 0.66570055, y: -0.1664791, z: 0}
+  m_Size: {x: 10.659907, y: 13.210884, z: 0.2}
+  m_Center: {x: 0.66570055, y: 0.6728553, z: 0}
 --- !u!1 &8812633024251676782
 GameObject:
   m_ObjectHideFlags: 0
