@@ -6,13 +6,23 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Raymond's Script" t="Include">
+          <e p="StartGame.cs" t="Include" />
+        </e>
         <e p="Ryan's Scripts" t="Include">
           <e p="Dialogue_Holder.cs" t="Include" />
           <e p="Dialogue_Manager.cs" t="Include" />
           <e p="Raycast_Manager.cs" t="Include" />
         </e>
         <e p="Text" t="Include">
+          <e p="CARPET.txt" t="Include" />
+          <e p="Elevator.txt" t="Include" />
+          <e p="Grubby.txt" t="Include" />
           <e p="grubbyKid.txt" t="Include" />
+          <e p="GUM.txt" t="Include" />
+          <e p="KoS.txt" t="Include" />
+          <e p="MOM.txt" t="Include" />
+          <e p="ShoeGuy.txt" t="Include" />
         </e>
         <e p="TR's Scripts" t="Include">
           <e p="CameraManager.cs" t="Include" />
