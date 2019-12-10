@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baef9d75-8308-4558-9b51-30a2f6fff56b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DialogueTester.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DialogueTester.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/Mouse_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TR's Scripts/Mouse_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/Question-mark-blackandwhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/Question-mark-blackandwhite.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/Square.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/Square.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Z's Scripts/Arrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Z's Scripts/Arrow.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,27 +17,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TR's Scripts/CameraManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TR's Scripts/ElevatorScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.0/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TR's Scripts/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Z's Scripts/Arrow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TR's Scripts/Mouse_Manager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Z's Scripts/DialogueImporter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TR's Scripts/Room.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Room.cs" />
+        <option value="$PROJECT_DIR$/Assets/Z's Scripts/CameraManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Mouse_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Z's Scripts/Arrow.cs" />
+        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" />
         <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Raycast_Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Item.cs" />
-        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" />
-        <option value="$PROJECT_DIR$/Assets/TR's Scripts/Mouse_Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/TR's Scripts/ElevatorScript.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +124,11 @@
       <workItem from="1574262435100" duration="6703000" />
       <workItem from="1574269345585" duration="2952000" />
       <workItem from="1574372806318" duration="803000" />
-      <workItem from="1575403229979" duration="4079000" />
+      <workItem from="1575403229979" duration="4397000" />
+      <workItem from="1575564399269" duration="3536000" />
+      <workItem from="1575576894242" duration="4319000" />
+      <workItem from="1575660209480" duration="108000" />
+      <workItem from="1575660439411" duration="3140000" />
     </task>
     <servers />
   </component>

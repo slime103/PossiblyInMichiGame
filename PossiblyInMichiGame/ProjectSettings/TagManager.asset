@@ -6,6 +6,14 @@ TagManager:
   tags:
   - NPC
   - ItemBaby
+  - ItemQuarter
+  - ItemGum
+  - ItemEar
+  - Arrow
+  - ItemKey
+  - ElevatorDown
+  - ElevatorUp
+  - Nose
   layers:
   - Default
   - TransparentFX

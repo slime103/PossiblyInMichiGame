@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3157702707671436242}
   - component: {fileID: 6339217839915490700}
   - component: {fileID: 6151561619843508433}
-  - component: {fileID: 8124301776152126925}
+  - component: {fileID: 4377837383566220489}
   m_Layer: 0
   m_Name: leftArrow
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546829741801292536}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: -15.436993, y: -1.7145405, z: 4.4109616}
+  m_LocalPosition: {x: -15.436993, y: -1.7145405, z: 4.410962}
   m_LocalScale: {x: 0.271817, y: 0.271817, z: 0.271817}
   m_Children: []
   m_Father: {fileID: 1985217545850916828}
@@ -94,33 +94,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b1425533df77f489d9525d4affdf4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomName: 
---- !u!61 &8124301776152126925
-BoxCollider2D:
+  roomName: river
+  sr: {fileID: 0}
+  unlocked: 0
+--- !u!65 &4377837383566220489
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546829741801292536}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.4665532, y: 0.11670303}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 4.57}
-    newSize: {x: 6, y: 4.57}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.198955, y: 73.386215}
-  m_EdgeRadius: 0
+  m_Size: {x: 11.430833, y: 15.339569, z: 0.2}
+  m_Center: {x: -0.15973046, y: -0.67965394, z: 0.0000009525073}
 --- !u!1 &7104955654288395523
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,10 +121,10 @@ GameObject:
   - component: {fileID: 7130847845135679544}
   - component: {fileID: 4063822207372648862}
   - component: {fileID: 8111270066865596108}
-  - component: {fileID: 1188788853802412073}
+  - component: {fileID: 9193535552570139518}
   m_Layer: 0
   m_Name: rightArrow
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,33 +204,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b1425533df77f489d9525d4affdf4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomName: 
---- !u!61 &1188788853802412073
-BoxCollider2D:
+  roomName: lake
+  sr: {fileID: 0}
+  unlocked: 0
+--- !u!65 &9193535552570139518
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7104955654288395523}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.43145943, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 4.57}
-    newSize: {x: 6, y: 4.57}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.314627, y: 73.603714}
-  m_EdgeRadius: 0
+  m_Size: {x: 10.659907, y: 14.05019, z: 0.2}
+  m_Center: {x: 0.66570055, y: 0.25318855, z: 0}
 --- !u!1 &8812633024251676782
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,7 +244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8812633024251676782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8130075, y: 1.7745404, z: -4.4109616}
+  m_LocalPosition: {x: -0.8130075, y: 1.7745404, z: -4.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7130847845135679544}
