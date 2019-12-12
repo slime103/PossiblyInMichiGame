@@ -15,8 +15,8 @@ public class Arrow : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         childsr = GetComponentInChildren<SpriteRenderer>();
-        Hide();
-        HideName();
+        //Hide();
+        //HideName();
     }
 
     public void Show() //Sets the sprite to be shaded
