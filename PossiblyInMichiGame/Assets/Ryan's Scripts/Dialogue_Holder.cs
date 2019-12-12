@@ -21,6 +21,7 @@ public class Dialogue_Holder : MonoBehaviour
     public string[] dialogue_Incomplete_NoItem;
     public string[] characterName; //Name string
     public string character;
+
     public Mouse_Manager.MouseState reward;
     public bool manualTransport, unlockArrow;
     public string destination;
@@ -32,13 +33,13 @@ public class Dialogue_Holder : MonoBehaviour
         taskComplete = false;
     }
 
-    void ImportDialogue()
+    void ImportDialogue() //reads text file and splits it into corresponding arrays
     {
-        string[] dialogueStates;
+        string[] dialogueStates; //temp holder array
 
-        dialogueStates = (dialogueText.text.Split('\n'));
+        dialogueStates = (dialogueText.text.Split('\n')); //splits by line
 
-        //sort array
+        //sort array, splits each line by comma
         character = dialogueStates[0];
         welcomeBarks = dialogueStates[1].Split(',');
         dialogue_CorrectItem = dialogueStates[2].Split(',');

@@ -170,4 +170,33 @@ public class Dialogue_Manager : MonoBehaviour
         Debug.Log(sequenceNumber);
 
     }
+
+    public void TaskOnClickAlt()
+    {
+        sequenceNumber = Random.Range(0,thisDialogueSequence.Length-1); //Selects a random index
+
+        Debug.Log(sequenceNumber); //Keep track of the sequences
+
+        dialogueBox.SetActive(false); //turn off the UI
+
+        currentlyTalkingTo = null; //MUST BE NULL
+
+        isTalkingTo = false;
+        if (thisDialogueSequence == dialogueHolder.dialogue_CorrectItem)
+        {
+            if (dialogueHolder.reward != Mouse_Manager.MouseState.None)
+            {
+                myInv.ReturnItem(dialogueHolder.reward);
+            }
+            if (dialogueHolder.unlockArrow)
+            {
+                dialogueHolder.toUnlock.unlocked = true;
+            }
+            if (dialogueHolder.manualTransport)
+            {
+                camera.MoveToRoom(dialogueHolder.destination);
+            }
+        }
+        
+    }
 }
