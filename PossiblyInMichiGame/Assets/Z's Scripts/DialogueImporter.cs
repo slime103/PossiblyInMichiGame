@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DialogueImporter : MonoBehaviour
 {
+    public TextAsset dialogueRay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,6 @@ public class DialogueImporter : MonoBehaviour
             if (int.TryParse(str, out val))
                 intValues.Add(val);
         }
-    }
-    */
+    }*/
+    
 }

@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 9053fd3fa6279684ba6e8db6928843fc
+  - enabled: 0
+    path: Assets/Scenes/CameraMoveTest.unity
+    guid: 4e0ee527d78ef4f46be8669621da3ec2
+  - enabled: 1
     path: Assets/Scenes/DialogueTester.unity
     guid: 69d53ae53e527834da239662f659e0a3
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 4f159e0fdefbf487e99d3ef8ba75f3c3
   m_configObjects: {}

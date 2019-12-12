@@ -7,12 +7,16 @@ public class Arrow : MonoBehaviour
     public string roomName; //stores the name of the room the arrow will take you to when clicked
 
     public SpriteRenderer sr;
+    public SpriteRenderer childsr;
+    
+    public bool unlocked;
 
     public void Start() //starts invisible
     {
         sr = GetComponent<SpriteRenderer>();
-        sr.color = Color.white;
-        Hide();
+        childsr = GetComponentInChildren<SpriteRenderer>();
+        //Hide();
+        //HideName();
     }
 
     public void Show() //Sets the sprite to be shaded
@@ -27,5 +31,15 @@ public class Arrow : MonoBehaviour
     public void Hide() //Turns the alpha to 0 making the arow invisible
     {
         sr.color = Color.clear;
+    }
+
+    public void HideName() //Hides the room name
+    {
+        childsr.color = Color.clear;
+    }
+
+    public void ShowName()
+    {
+        childsr.color = Color.white;
     }
 }

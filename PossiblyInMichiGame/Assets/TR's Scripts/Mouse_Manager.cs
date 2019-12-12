@@ -17,6 +17,8 @@ public class Mouse_Manager : MonoBehaviour
         Perfume
     }
 
+    public AudioClip mouseClickSound;
+
     public Inventory myInv;
 
     public Sprite[] itemSprites;
@@ -31,7 +33,10 @@ public class Mouse_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            GetComponent<AudioSource>().PlayOneShot(mouseClickSound);
+        }
     }
 
     public void SetState(MouseState targetState)

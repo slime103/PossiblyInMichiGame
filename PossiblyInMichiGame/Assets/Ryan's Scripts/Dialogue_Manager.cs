@@ -37,6 +37,7 @@ public class Dialogue_Manager : MonoBehaviour
     public string[] thisDialogueSequence;
     public Mouse_Manager myMouse;
     public Inventory myInv;
+    public CameraManager camera;
 
     
     // Start is called before the first frame update
@@ -69,29 +70,33 @@ public class Dialogue_Manager : MonoBehaviour
             case true:
                 if (myMouse.myState == Mouse_Manager.MouseState.None)
                 {
-                    thisDialogueSequence = dialogueHolder.dialogueTaskComplete;
+                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
                 }
                 else
                 {
                     myInv.ReturnItem(myMouse.myState);
                     myMouse.SetState(Mouse_Manager.MouseState.None);
-                    thisDialogueSequence = dialogueHolder.dialogueIncorrectStateComplete;
+                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
                 }
                 break;
             case false:
                 if (myMouse.myState == Mouse_Manager.MouseState.None)
                 {
-                    thisDialogueSequence = dialogueHolder.dialogueTaskIncomplete;
+                    thisDialogueSequence = dialogueHolder.dialogue_Incomplete_NoItem;
                 }
                 else if (myMouse.myState == dialogueHolder.idealState)
                 {
-                    thisDialogueSequence = dialogueHolder.dialogueCorrectState;
+                    thisDialogueSequence = dialogueHolder.dialogue_CorrectItem;
                     myMouse.SetState(Mouse_Manager.MouseState.None);
                     dialogueHolder.taskComplete = true;
+                    if (dialogueHolder.character == "Elevator Man")
+                    {
+                        dialogueHolder.gameObject.tag = "ElevatorUp";
+                    }
                 }
                 else
                 {
-                    thisDialogueSequence = dialogueHolder.dialogueIncorrectStateIncomplete;
+                    thisDialogueSequence = dialogueHolder.dialogue_Complete_Item;
                     myInv.ReturnItem(myMouse.myState);
                     myMouse.SetState(Mouse_Manager.MouseState.None);
                 }
@@ -99,7 +104,15 @@ public class Dialogue_Manager : MonoBehaviour
         }
 
         SetSequence(0); //Resets the Sequence for every new character
+    }
 
+    public void Bark(Dialogue_Holder whichChar)
+    {
+        isTalkingTo = true;
+        currentlyTalkingTo = whichChar.gameObject;
+        dialogueHolder = whichChar;
+        //set this dialogue to the barks
+        SetSequence(0);
     }
 
     //Called when button is clicked
@@ -121,7 +134,21 @@ public class Dialogue_Manager : MonoBehaviour
             currentlyTalkingTo = null; //MUST BE NULL
 
             isTalkingTo = false;
-
+            if (thisDialogueSequence == dialogueHolder.dialogue_CorrectItem)
+            {
+                if (dialogueHolder.reward != Mouse_Manager.MouseState.None)
+                {
+                    myInv.ReturnItem(dialogueHolder.reward);
+                }
+                if (dialogueHolder.unlockArrow)
+                {
+                    dialogueHolder.toUnlock.unlocked = true;
+                }
+                if (dialogueHolder.manualTransport)
+                {
+                    camera.MoveToRoom(dialogueHolder.destination);
+                }
+            }
         }
         else //Keeps the sequence going
         {

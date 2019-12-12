@@ -26,8 +26,9 @@ public class Inventory : MonoBehaviour
                 invButtons[i].interactable = false;
             }
         }
+        ReturnItem(Mouse_Manager.MouseState.Quarter);
     }
-    
+
     void Update()
     {
         if (Input.GetKey(KeyCode.Space))//Test to go through inventory and give information about each item
@@ -98,6 +99,7 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(Item thisItem)
     {
+        
         switch (thisItem.gameObject.tag)
         {
             case "ItemQuarter": //Not really ever used but just made for completion
@@ -153,6 +155,10 @@ public class Inventory : MonoBehaviour
 
     public void PushItemButton(string thisItem)
     {
+        if (myMouse.myState != Mouse_Manager.MouseState.None)
+        {
+            ReturnItem(myMouse.myState);
+        }
         switch (thisItem)
         {
             case "Quarter":
