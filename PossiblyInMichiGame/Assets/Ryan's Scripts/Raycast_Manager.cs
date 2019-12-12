@@ -57,12 +57,12 @@ public class Raycast_Manager : MonoBehaviour
                     {
                         myInv.AddItem(mouseRayHit.collider.gameObject.GetComponent<Item>());
                     }
-                }
+                }/*
                 else if (mouseRayHit.collider.CompareTag("Arrow"))
                 {
                     mouseRayHit.collider.gameObject.GetComponent<Arrow>().Show();
                     Debug.Log("Hit an arrow");
-                }
+                }*/
 
             }
 
@@ -99,8 +99,8 @@ public class Raycast_Manager : MonoBehaviour
                     else if (myMouse.myState != Mouse_Manager.MouseState.Perfume &&
                              myMouse.myState != Mouse_Manager.MouseState.None)
                     {
-                        myInv.ReturnItem(myMouse.myState);
-                        myMouse.SetState(Mouse_Manager.MouseState.None);
+                    myInv.ReturnItem(myMouse.myState);
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
                     }
                 }
             }

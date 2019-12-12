@@ -1,5 +1,5 @@
 GRUBBY KID
-Hey! Hey you!,I know you can hear me!, Psst!
+Hey! Hey you!,I know you can hear me!,Psst!
 Yes! I knew you had money. [chews the gum] I’m done. Here. [spits it at player’s hand]
 You got a quarter?,Yeah. Gimme some money I want that gum.
 dialogue needed
