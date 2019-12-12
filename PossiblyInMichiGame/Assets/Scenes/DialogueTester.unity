@@ -470,7 +470,7 @@ PrefabInstance:
     - target: {fileID: 7762421856612786765, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.3
+      value: -5.6
       objectReference: {fileID: 0}
     - target: {fileID: 7762421856612786765, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -2283,7 +2283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716093923}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.45, y: 9.73, z: -2}
+  m_LocalPosition: {x: 0.45, y: 8.88, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1175235768}
@@ -3799,7 +3799,7 @@ PrefabInstance:
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: lake
+      value: Stock Image of A Lake
       objectReference: {fileID: 0}
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -3836,6 +3836,27 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 25.429998
       objectReference: {fileID: 0}
+    - target: {fileID: 4329238571633708472, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3bb3e313dc316324fba809b211116fe5,
+        type: 3}
+    - target: {fileID: 4329238571633708472, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329238571633708472, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329238571633708472, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7762421856612786765, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -3870,12 +3891,12 @@ PrefabInstance:
     - target: {fileID: 546829741801292536, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7104955654288395523, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0de2c259627b91040a325229bc51f962, type: 3}
@@ -4134,7 +4155,7 @@ PrefabInstance:
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Upper Elevator
+      value: Realm of Bargains
       objectReference: {fileID: 0}
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -4144,7 +4165,7 @@ PrefabInstance:
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Realm of Bargains
+      value: Upper Elevator
       objectReference: {fileID: 0}
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -4180,7 +4201,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fbd593305738796489cf452928c5087d,
+      objectReference: {fileID: 21300000, guid: 6a0081b05505c94439ce1744328bffd4,
         type: 3}
     - target: {fileID: 4329238571633708472, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -4202,11 +4223,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 7762421856612786765, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5999228605571652603, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 6a0081b05505c94439ce1744328bffd4,
+      objectReference: {fileID: 21300000, guid: fbd593305738796489cf452928c5087d,
         type: 3}
     - target: {fileID: 5999228605571652603, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -4885,7 +4911,7 @@ PrefabInstance:
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Don's Low-Calorie Carpets
+      value: Exotic Pet Store
       objectReference: {fileID: 0}
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -4895,7 +4921,7 @@ PrefabInstance:
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Exotic Pet Store
+      value: Don's Low-Calorie Carpets
       objectReference: {fileID: 0}
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -4946,7 +4972,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 32fc493d378f4074e8cf25fce9fdffaa,
+      objectReference: {fileID: 21300000, guid: 909e40554d03b9346af8596668ef950a,
         type: 3}
     - target: {fileID: 4329238571633708472, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -4971,13 +4997,13 @@ PrefabInstance:
     - target: {fileID: 7762421856612786765, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.1
+      value: -4.2
       objectReference: {fileID: 0}
     - target: {fileID: 5999228605571652603, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 909e40554d03b9346af8596668ef950a,
+      objectReference: {fileID: 21300000, guid: 32fc493d378f4074e8cf25fce9fdffaa,
         type: 3}
     - target: {fileID: 5999228605571652603, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -5200,7 +5226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461278984}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.11, y: 1.748, z: -2}
+  m_LocalPosition: {x: 0.11, y: 1.64, z: -2}
   m_LocalScale: {x: 0.19395405, y: 0.1807352, z: 1}
   m_Children: []
   m_Father: {fileID: 338299953}
@@ -5984,6 +6010,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 7762421856612786765, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5999228605571652603, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_Sprite
@@ -6257,7 +6288,7 @@ PrefabInstance:
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Exotic Pet Store
+      value: The Mouth Zone
       objectReference: {fileID: 0}
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -6267,7 +6298,7 @@ PrefabInstance:
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: The Mouth Zone
+      value: Exotic Pet Store
       objectReference: {fileID: 0}
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -6287,12 +6318,12 @@ PrefabInstance:
     - target: {fileID: 8814870970194751580, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5
+      value: -4.7
       objectReference: {fileID: 0}
     - target: {fileID: 8814870970194751580, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 5.4
       objectReference: {fileID: 0}
     - target: {fileID: 8814870970194751580, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -6303,7 +6334,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: affd89d6bb6007b40a5dfbe98eb1c042,
+      objectReference: {fileID: 21300000, guid: 32fc493d378f4074e8cf25fce9fdffaa,
         type: 3}
     - target: {fileID: 4329238571633708472, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -6325,11 +6356,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 7762421856612786765, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762421856612786765, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5999228605571652603, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 32fc493d378f4074e8cf25fce9fdffaa,
+      objectReference: {fileID: 21300000, guid: affd89d6bb6007b40a5dfbe98eb1c042,
         type: 3}
     - target: {fileID: 5999228605571652603, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -7635,7 +7676,7 @@ PrefabInstance:
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Realm of Bargains
+      value: Stock Image of A Lake
       objectReference: {fileID: 0}
     - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -7645,7 +7686,7 @@ PrefabInstance:
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
-      value: Stock Image of A Lake
+      value: Realm of Bargains
       objectReference: {fileID: 0}
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -7691,7 +7732,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3bb3e313dc316324fba809b211116fe5,
+      objectReference: {fileID: 21300000, guid: fbd593305738796489cf452928c5087d,
         type: 3}
     - target: {fileID: 4329238571633708472, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
@@ -7717,7 +7758,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fbd593305738796489cf452928c5087d,
+      objectReference: {fileID: 21300000, guid: 3bb3e313dc316324fba809b211116fe5,
         type: 3}
     - target: {fileID: 5999228605571652603, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
