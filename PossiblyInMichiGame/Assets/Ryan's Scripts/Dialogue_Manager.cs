@@ -34,6 +34,10 @@ public class Dialogue_Manager : MonoBehaviour
     
     //Scripts
     public Dialogue_Holder dialogueHolder; //Taking the script that's on the NPCS
+    public string[] thisDialogueSequence;
+    public Mouse_Manager myMouse;
+    public Inventory myInv;
+    public CameraManager camera;
 
     
     // Start is called before the first frame update
@@ -49,7 +53,7 @@ public class Dialogue_Manager : MonoBehaviour
     }
     
     //Easily sets the NPC
-    public void SetCharacter(GameObject NPC)
+    public void SetCharacter(GameObject NPC, Mouse_Manager.MouseState state)
     {
        
         //Add in bool so that there is no restarting the dialogue
@@ -60,9 +64,55 @@ public class Dialogue_Manager : MonoBehaviour
         currentlyTalkingTo = NPC; //Set currentlyTalkingTo from null to whatever the NPC is
 
         dialogueHolder = NPC.GetComponent<Dialogue_Holder>(); //Take the Dialogue Holder from the NPC
-        
-        SetSequence(0); //Resets the Sequence for every new character
 
+        switch (dialogueHolder.taskComplete)
+        {
+            case true:
+                if (myMouse.myState == Mouse_Manager.MouseState.None)
+                {
+                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
+                }
+                else
+                {
+                    myInv.ReturnItem(myMouse.myState);
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
+                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
+                }
+                break;
+            case false:
+                if (myMouse.myState == Mouse_Manager.MouseState.None)
+                {
+                    thisDialogueSequence = dialogueHolder.dialogue_Incomplete_NoItem;
+                }
+                else if (myMouse.myState == dialogueHolder.idealState)
+                {
+                    thisDialogueSequence = dialogueHolder.dialogue_CorrectItem;
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
+                    dialogueHolder.taskComplete = true;
+                    if (dialogueHolder.character == "Elevator Man")
+                    {
+                        dialogueHolder.gameObject.tag = "ElevatorUp";
+                    }
+                }
+                else
+                {
+                    thisDialogueSequence = dialogueHolder.dialogue_Complete_Item;
+                    myInv.ReturnItem(myMouse.myState);
+                    myMouse.SetState(Mouse_Manager.MouseState.None);
+                }
+                break;
+        }
+
+        SetSequence(0); //Resets the Sequence for every new character
+    }
+
+    public void Bark(Dialogue_Holder whichChar)
+    {
+        isTalkingTo = true;
+        currentlyTalkingTo = whichChar.gameObject;
+        dialogueHolder = whichChar;
+        //set this dialogue to the barks
+        SetSequence(0);
     }
 
     //Called when button is clicked
@@ -72,7 +122,7 @@ public class Dialogue_Manager : MonoBehaviour
         
         Debug.Log(sequenceNumber); //Keep track of the sequences
         
-        if (sequenceNumber >= dialogueHolder.dialogue.Length) //Resets everything once array is over
+        if (sequenceNumber >= thisDialogueSequence.Length) //Resets everything once array is over
         {
             Debug.Log("conversation over");
             
@@ -84,7 +134,21 @@ public class Dialogue_Manager : MonoBehaviour
             currentlyTalkingTo = null; //MUST BE NULL
 
             isTalkingTo = false;
-
+            if (thisDialogueSequence == dialogueHolder.dialogue_CorrectItem)
+            {
+                if (dialogueHolder.reward != Mouse_Manager.MouseState.None)
+                {
+                    myInv.ReturnItem(dialogueHolder.reward);
+                }
+                if (dialogueHolder.unlockArrow)
+                {
+                    dialogueHolder.toUnlock.unlocked = true;
+                }
+                if (dialogueHolder.manualTransport)
+                {
+                    camera.MoveToRoom(dialogueHolder.destination);
+                }
+            }
         }
         else //Keeps the sequence going
         {
@@ -99,11 +163,11 @@ public class Dialogue_Manager : MonoBehaviour
     {
         Debug.Log("Start conversation");
         
-        dialogueText.text = dialogueHolder.dialogue[sequenceNumber]; //Connects the strings to the texts to the sequence
+        dialogueText.text = thisDialogueSequence[sequenceNumber]; //Connects the strings to the texts to the sequence
 
-        nameText.text = dialogueHolder.characterName[sequenceNumber]; //Connects the strings to the texts to the sequence
+        nameText.text = dialogueHolder.character; //Connects the strings to the texts to the sequence
         
-        Debug.Log(sequenceNumber); 
+        Debug.Log(sequenceNumber);
 
     }
 }
