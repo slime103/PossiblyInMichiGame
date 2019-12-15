@@ -211,27 +211,35 @@ public class Inventory : MonoBehaviour
         {
             case Mouse_Manager.MouseState.Quarter:
                 invButtons[0].interactable = false;
+                invButtons[0].image.sprite = itemSprites[9];
                 break;
             case Mouse_Manager.MouseState.Key:
                 invButtons[1].interactable = false;
+                invButtons[1].image.sprite = itemSprites[9];
                 break;
             case Mouse_Manager.MouseState.Gum:
                 invButtons[2].interactable = false;
+                invButtons[2].image.sprite = itemSprites[9];
                 break;
             case Mouse_Manager.MouseState.Baby:
                 invButtons[3].interactable = false;
+                invButtons[3].image.sprite = itemSprites[9];
                 break;
             case Mouse_Manager.MouseState.Ear:
                 invButtons[4].interactable = false;
+                invButtons[4].image.sprite = itemSprites[9];
                 break;
             case Mouse_Manager.MouseState.Shoe:
                 invButtons[5].interactable = false;
+                invButtons[5].image.sprite = itemSprites[9];
                 break;
             case Mouse_Manager.MouseState.Snail:
                 invButtons[6].interactable = false;
+                invButtons[6].image.sprite = itemSprites[9];
                 break;
             case Mouse_Manager.MouseState.Perfume:
                 invButtons[7].interactable = false;
+                invButtons[7].image.sprite = itemSprites[9];
                 break;
         }
         myMouse.SetState(Mouse_Manager.MouseState.None);
