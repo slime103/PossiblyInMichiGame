@@ -33,7 +33,7 @@ public class Dialogue_Manager : MonoBehaviour
     public bool isTalkingTo;
     
     //Scripts
-    public Dialogue_Holder dialogueHolder; //Taking the script that's on the NPCS
+    public DialogueHolder dialogueHolder; //Taking the script that's on the NPCS
     public string[] thisDialogueSequence;
     public Mouse_Manager myMouse;
     public Inventory myInv;
@@ -63,50 +63,94 @@ public class Dialogue_Manager : MonoBehaviour
         
         currentlyTalkingTo = NPC; //Set currentlyTalkingTo from null to whatever the NPC is
 
-        dialogueHolder = NPC.GetComponent<Dialogue_Holder>(); //Take the Dialogue Holder from the NPC
-
+        dialogueHolder = NPC.GetComponent<DialogueHolder>(); //Take the Dialogue Holder from the NPC
+        Debug.Log(state);
+        /*
         switch (dialogueHolder.taskComplete)
         {
-            case true:
-                if (myMouse.myState == Mouse_Manager.MouseState.None)
-                {
-                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
-                }
-                else
-                {
-                    myInv.ReturnItem(myMouse.myState);
-                    myMouse.SetState(Mouse_Manager.MouseState.None);
-                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
-                }
-                break;
             case false:
-                if (myMouse.myState == Mouse_Manager.MouseState.None)
+                switch (state)
                 {
-                    thisDialogueSequence = dialogueHolder.dialogue_Incomplete_NoItem;
-                }
-                else if (myMouse.myState == dialogueHolder.idealState)
-                {
-                    thisDialogueSequence = dialogueHolder.dialogue_CorrectItem;
-                    myMouse.SetState(Mouse_Manager.MouseState.None);
-                    dialogueHolder.taskComplete = true;
-                    if (dialogueHolder.character == "Elevator Man")
-                    {
-                        dialogueHolder.gameObject.tag = "ElevatorUp";
-                    }
-                }
-                else
-                {
-                    thisDialogueSequence = dialogueHolder.dialogue_Complete_Item;
-                    myInv.ReturnItem(myMouse.myState);
-                    myMouse.SetState(Mouse_Manager.MouseState.None);
+                    case Mouse_Manager.MouseState.None:
+                        if (!dialogueHolder.introduced)
+                        {
+                            thisDialogueSequence = dialogueHolder.introduction;
+                        }
+                        else
+                        {
+                            thisDialogueSequence = dialogueHolder.dialogueIncompleteNoItem;
+                        }
+                        break;
+                    case Mouse_Manager.MouseState.Quarter:
+                        thisDialogueSequence = dialogueHolder.dialogueIncompleteQuarter;
+                        break;
+                    case Mouse_Manager.MouseState.Key:
+                        thisDialogueSequence = dialogueHolder.dialogueIncompleteKey;
+                        break;
+                    case Mouse_Manager.MouseState.Gum:
+                        thisDialogueSequence = dialogueHolder.dialogueIncompleteGum;
+                        break;
+                    case Mouse_Manager.MouseState.Baby:
+                        thisDialogueSequence = dialogueHolder.dialogueIncompleteBaby;
+                        break;
+                    case Mouse_Manager.MouseState.Ear:
+                        thisDialogueSequence = dialogueHolder.dialogueIncompleteEar;
+                        break;
+                    case Mouse_Manager.MouseState.Shoe:
+                        thisDialogueSequence = dialogueHolder.dialogueIncompleteShoe;
+                        break;
+                    case Mouse_Manager.MouseState.Snail:
+                        thisDialogueSequence = dialogueHolder.dialogueIncompleteSnail;
+                        break;
                 }
                 break;
+            case true:
+                switch (state)
+                {
+                    case Mouse_Manager.MouseState.None:
+                        thisDialogueSequence = dialogueHolder.dialogueCompleteNoItem;
+                        break;
+                    case Mouse_Manager.MouseState.Quarter:
+                        thisDialogueSequence = dialogueHolder.dialogueCompleteQuarter;
+                        break;
+                    case Mouse_Manager.MouseState.Key:
+                        thisDialogueSequence = dialogueHolder.dialogueCompleteKey;
+                        break;
+                    case Mouse_Manager.MouseState.Gum:
+                        thisDialogueSequence = dialogueHolder.dialogueCompleteGum;
+                        break;
+                    case Mouse_Manager.MouseState.Baby:
+                        thisDialogueSequence = dialogueHolder.dialogueCompleteBaby;
+                        break;
+                    case Mouse_Manager.MouseState.Ear:
+                        thisDialogueSequence = dialogueHolder.dialogueCompleteEar;
+                        break;
+                    case Mouse_Manager.MouseState.Shoe:
+                        thisDialogueSequence = dialogueHolder.dialogueCompleteShoe;
+                        break;
+                    case Mouse_Manager.MouseState.Snail:
+                        thisDialogueSequence = dialogueHolder.dialogueCompleteSnail;
+                        break;
+                }
+                break;
+        }*/
+        //thisDialogueSequence = dialogueHolder.ReadMouseAndGetDialogue(state);
+        if (myMouse.myState != Mouse_Manager.MouseState.None && thisDialogueSequence == dialogueHolder.ReadMouseAndGetDialogue(dialogueHolder.idealState))
+        {
+            myInv.RemoveItem();
+            if (dialogueHolder.swapSprite)
+            {
+                dialogueHolder.mySR.sprite = dialogueHolder.endSprite;
+            }
         }
-
+        else if (myMouse.myState != Mouse_Manager.MouseState.None && thisDialogueSequence != dialogueHolder.ReadMouseAndGetDialogue(dialogueHolder.idealState))
+        {
+            myMouse.ResetState();
+        }
         SetSequence(0); //Resets the Sequence for every new character
     }
 
-    public void Bark(Dialogue_Holder whichChar)
+    public void Bark(DialogueHolder whichChar)
     {
         isTalkingTo = true;
         currentlyTalkingTo = whichChar.gameObject;
@@ -134,20 +178,22 @@ public class Dialogue_Manager : MonoBehaviour
             currentlyTalkingTo = null; //MUST BE NULL
 
             isTalkingTo = false;
-            if (thisDialogueSequence == dialogueHolder.dialogue_CorrectItem)
+            if (thisDialogueSequence == dialogueHolder.dialogueIdeal)
             {
+                myInv.RemoveItem();
+                dialogueHolder.taskComplete = true;
                 if (dialogueHolder.reward != Mouse_Manager.MouseState.None)
                 {
                     myInv.ReturnItem(dialogueHolder.reward);
                 }
                 if (dialogueHolder.unlockArrow)
                 {
-                    dialogueHolder.toUnlock.unlocked = true;
+                    dialogueHolder.toUnlock.ActivateArrow();
                 }
-                if (dialogueHolder.manualTransport)
-                {
-                    camera.MoveToRoom(dialogueHolder.destination);
-                }
+            }
+            else if (!dialogueHolder.introduced)
+            {
+                dialogueHolder.introduced = true;
             }
         }
         else //Keeps the sequence going
@@ -161,11 +207,10 @@ public class Dialogue_Manager : MonoBehaviour
     //The Dialogue System
     public void SetSequence(int sequenceNumber)
     {
-        Debug.Log("Start conversation");
-        
+
         dialogueText.text = thisDialogueSequence[sequenceNumber]; //Connects the strings to the texts to the sequence
 
-        nameText.text = dialogueHolder.character; //Connects the strings to the texts to the sequence
+        //nameText.text = dialogueHolder.character; //Connects the strings to the texts to the sequence
         
         Debug.Log(sequenceNumber);
 

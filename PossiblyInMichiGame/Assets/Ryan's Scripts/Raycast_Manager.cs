@@ -13,8 +13,7 @@ public class Raycast_Manager : MonoBehaviour
     public Mouse_Manager myMouse;
     public Inventory myInv;
     public CameraManager camera;
-    public ElevatorScript upElevator, downElevator;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,69 +37,60 @@ public class Raycast_Manager : MonoBehaviour
         {
             if (dialogueManager.isTalkingTo == false)
             {
-                if (mouseRayHit.collider.CompareTag("NPC"))
+                if (Input.GetMouseButtonDown(0))
                 {
-
-                    //Later on I want to add a different mouse hover color so objects are more obviously clickable
-
-                    //If left mouse button is clicked:
-                    if (Input.GetMouseButton(0))
+                    Debug.Log("left mouse button clicked");
+                    if (mouseRayHit.collider.CompareTag("NPC"))
                     {
-                        dialogueManager.SetCharacter(mouseRayHit.collider.gameObject, myMouse.myState); //Gets the dialogue holder from the Character
-                        dialogueManager.dialogueBox.SetActive(true); //Turns on the dialogue box
+
+                        //Later on I want to add a different mouse hover color so objects are more obviously clickable
+
+                        //If left mouse button is clicked:
+                        if (Input.GetMouseButton(0))
+                        {
+                            dialogueManager.SetCharacter(mouseRayHit.collider.gameObject, myMouse.myState); //Gets the dialogue holder from the Character
+                            dialogueManager.dialogueBox.SetActive(true); //Turns on the dialogue box
+                        }
                     }
-                }
-                else if (mouseRayHit.collider.tag.Contains("Item") && myMouse.myState == Mouse_Manager.MouseState.None)
-                {
-                    Debug.Log("There's an item here");
-                    if (Input.GetMouseButton(0))
+                    else if (mouseRayHit.collider.tag.Contains("Item") && myMouse.myState == Mouse_Manager.MouseState.None)
                     {
-                        myInv.AddItem(mouseRayHit.collider.gameObject.GetComponent<Item>());
+                        Debug.Log("There's an item here");
+                        if (Input.GetMouseButton(0))
+                        {
+                            myInv.AddItem(mouseRayHit.collider.gameObject.GetComponent<Item>());
+                        }
                     }
-                }/*
-                else if (mouseRayHit.collider.CompareTag("Arrow"))
-                {
-                    mouseRayHit.collider.gameObject.GetComponent<Arrow>().Show();
-                    Debug.Log("Hit an arrow");
-                }*/
-
-            }
-
-            //For when objects are introduced 
-            /*if (mouseRayHit.collider.CompareTag("Object"))
-            {
-                
-            }*/
-            if (Input.GetMouseButtonDown(0))
-            {
-                if (mouseRayHit.collider.CompareTag("Arrow") && mouseRayHit.collider.gameObject.GetComponent<Arrow>().unlocked)
-                {
-                    string NameOfRoom = mouseRayHit.collider.gameObject.GetComponent<Arrow>().roomName;
-                    camera.MoveToRoom(NameOfRoom);
+                    else if (mouseRayHit.collider.CompareTag("Arrow") && mouseRayHit.collider.gameObject.GetComponent<Arrow>().unlocked)
+                    {
+                        string NameOfRoom = mouseRayHit.collider.gameObject.GetComponent<Arrow>().roomName;
+                        camera.MoveToRoom(NameOfRoom);
                    
-                    Debug.Log("Hit an arrow");
-                }
-                else if (mouseRayHit.collider.CompareTag("ElevatorUp"))
-                {
-                    camera.MoveToRoom("Elevator Mouth Going Up");
-                    upElevator.UseElevator("Upper Elevator");
-                }
-                else if (mouseRayHit.collider.CompareTag("ElevatorDown"))
-                {
-                    camera.MoveToRoom("Elevator Mouth Going Down");
-                    downElevator.UseElevator("Lower Elevator");
-                }
-                else if (mouseRayHit.collider.CompareTag("Nose"))
-                {
-                    if (myMouse.myState == Mouse_Manager.MouseState.Perfume)
-                    {
-                        SceneManager.LoadScene("WinScreen");
+                        Debug.Log("Hit an arrow");
                     }
-                    else if (myMouse.myState != Mouse_Manager.MouseState.Perfume &&
-                             myMouse.myState != Mouse_Manager.MouseState.None)
+                    else if (mouseRayHit.collider.CompareTag("Nose"))
                     {
-                    myInv.ReturnItem(myMouse.myState);
-                    myMouse.SetState(Mouse_Manager.MouseState.None);
+                        if (myMouse.myState == Mouse_Manager.MouseState.Perfume)
+                        {
+                            SceneManager.LoadScene("WinScreen");
+                        }
+                        else if (myMouse.myState != Mouse_Manager.MouseState.Perfume &&
+                                 myMouse.myState != Mouse_Manager.MouseState.None)
+                        {
+                            myInv.ReturnItem(myMouse.myState);
+                            myMouse.SetState(Mouse_Manager.MouseState.None);
+                        }
+                    }
+                    else if (mouseRayHit.collider.CompareTag("Background"))
+                    {
+                        myMouse.ResetState();
+                    }
+                }
+                if (Input.GetMouseButton(1))
+                {
+                    Debug.Log("Other mouse button clicked");
+                    if (myMouse.myState != Mouse_Manager.MouseState.None)
+                    {
+                        myMouse.ResetState();
                     }
                 }
             }

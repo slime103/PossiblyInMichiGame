@@ -1002,28 +1002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 1256330685}
-  idealState: 4
-  taskComplete: 0
-  dialogueText: {fileID: 4900000, guid: 3332829201307441bbe03cbd7a95cdcf, type: 3}
-  introduction: []
-  welcomeBarks: []
-  dialogue_CorrectItem: []
-  dialogue_Complete_NoItem: []
-  dialogue_Incomplete_Item: []
-  dialogue_Complete_Item: []
-  dialogue_Incomplete_NoItem: []
-  characterName:
-  - Mom
-  - Momma
-  - Mommy
-  character: Mom
-  reward: 6
-  manualTransport: 0
-  unlockArrow: 0
-  introduced: 0
-  destination: 
-  toUnlock: {fileID: 0}
 --- !u!65 &233063024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1037,146 +1015,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.43, y: 20.8, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &263610387
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 263610391}
-  - component: {fileID: 263610390}
-  - component: {fileID: 263610389}
-  - component: {fileID: 263610388}
-  - component: {fileID: 263610392}
-  m_Layer: 0
-  m_Name: Upper Elevator Man
-  m_TagString: NPC
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &263610388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263610387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89a5e5b7c4ee55044ba83669fa3cea1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dm: {fileID: 969393407}
---- !u!65 &263610389
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263610387}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 9.726625, y: 17.811283, z: 0.19999997}
-  m_Center: {x: 0.6275278, y: 0.12452559, z: 0.00000000895849}
---- !u!212 &263610390
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263610387}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b05a99c00468d411f99a2a130fbad622, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 20.8, y: 20.8}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &263610391
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263610387}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.67, y: 0.13, z: -1.0709367}
-  m_LocalScale: {x: 0.46404153, y: 0.4800736, z: 0.44533733}
-  m_Children: []
-  m_Father: {fileID: 1570626376}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &263610392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 263610387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myMouse: {fileID: 1256330685}
-  idealState: 0
-  taskComplete: 1
-  dialogueText: {fileID: 4900000, guid: c90e2e2edf8b84d6194c627d2cec7400, type: 3}
-  introduction: []
-  welcomeBarks: []
-  dialogue_CorrectItem: []
-  dialogue_Complete_NoItem: []
-  dialogue_Incomplete_Item: []
-  dialogue_Complete_Item: []
-  dialogue_Incomplete_NoItem: []
-  characterName: []
-  character: 
-  reward: 0
-  manualTransport: 0
-  unlockArrow: 0
-  introduced: 0
-  destination: 
-  toUnlock: {fileID: 0}
 --- !u!1 &266026013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,9 +1106,10 @@ GameObject:
   - component: {fileID: 338299953}
   - component: {fileID: 338299952}
   - component: {fileID: 338299954}
+  - component: {fileID: 338299955}
   m_Layer: 0
   m_Name: The Mouth Zone
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1355,6 +1194,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCharacter: {fileID: 0}
   doIBark: 0
+--- !u!65 &338299955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338299951}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.05, y: 3.8399997, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &344270049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,28 +1437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 1256330685}
-  idealState: 1
-  taskComplete: 0
-  dialogueText: {fileID: 4900000, guid: 003db94fb0088455a834897351ad7319, type: 3}
-  introduction: []
-  welcomeBarks: []
-  dialogue_CorrectItem: []
-  dialogue_Complete_NoItem: []
-  dialogue_Incomplete_Item: []
-  dialogue_Complete_Item: []
-  dialogue_Incomplete_NoItem: []
-  characterName:
-  - Grubby kid
-  - Grubby kid
-  - Player
-  character: Grubby Boy
-  reward: 3
-  manualTransport: 0
-  unlockArrow: 0
-  introduced: 0
-  destination: 
-  toUnlock: {fileID: 0}
 --- !u!1 &419522869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1921,25 +1751,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 1256330685}
-  idealState: 2
-  taskComplete: 0
-  dialogueText: {fileID: 4900000, guid: c90e2e2edf8b84d6194c627d2cec7400, type: 3}
-  introduction: []
-  welcomeBarks: []
-  dialogue_CorrectItem: []
-  dialogue_Complete_NoItem: []
-  dialogue_Incomplete_Item: []
-  dialogue_Complete_Item: []
-  dialogue_Incomplete_NoItem: []
-  characterName: []
-  character: 
-  reward: 0
-  manualTransport: 0
-  unlockArrow: 1
-  introduced: 0
-  destination: 
-  toUnlock: {fileID: 1135458844}
 --- !u!65 &563485268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2191,6 +2002,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &646783561 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6339217839915490700, guid: 0de2c259627b91040a325229bc51f962,
+    type: 3}
+  m_PrefabInstance: {fileID: 1567819661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &664853267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2298,29 +2115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 1256330685}
-  idealState: 5
-  taskComplete: 0
-  dialogueText: {fileID: 4900000, guid: 27398e305ce0f49c8b0d0bf63f4d2a69, type: 3}
-  introduction:
-  - Oh frick frick frack, oh jeez...
-  - I have an interview at this gosh dang pet store today
-  - But I lost my other shoe!
-  - "I look like a complete fool, they\u2019ll never hire me with just one shoe!"
-  welcomeBarks: []
-  dialogue_CorrectItem: []
-  dialogue_Complete_NoItem: []
-  dialogue_Incomplete_Item: []
-  dialogue_Complete_Item: []
-  dialogue_Incomplete_NoItem: []
-  characterName: []
-  character: 
-  reward: 7
-  manualTransport: 0
-  unlockArrow: 0
-  introduced: 0
-  destination: 
-  toUnlock: {fileID: 0}
 --- !u!1 &667367793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2410,9 +2204,10 @@ GameObject:
   m_Component:
   - component: {fileID: 692420249}
   - component: {fileID: 692420248}
+  - component: {fileID: 692420250}
   m_Layer: 0
   m_Name: Exotic Pet Store
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2483,6 +2278,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &692420250
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692420247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &716093923
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,9 +2806,10 @@ GameObject:
   - component: {fileID: 868522580}
   - component: {fileID: 868522579}
   - component: {fileID: 868522581}
+  - component: {fileID: 868522582}
   m_Layer: 0
   m_Name: Super Rad Fun Zone
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3085,6 +2894,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCharacter: {fileID: 416014789}
   doIBark: 0
+--- !u!65 &868522582
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868522578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &884040985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3682,7 +3504,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1042010916}
   - component: {fileID: 1042010915}
-  - component: {fileID: 1042010914}
   - component: {fileID: 1042010913}
   m_Layer: 0
   m_Name: Keeper of Scents
@@ -3704,42 +3525,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20.8, y: 20.8, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1042010914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1042010912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myMouse: {fileID: 1256330685}
-  idealState: 7
-  taskComplete: 0
-  dialogueText: {fileID: 4900000, guid: cd206f1454309437c9c183064ee695bf, type: 3}
-  introduction: []
-  welcomeBarks: []
-  dialogue_CorrectItem:
-  - Correct
-  dialogue_Complete_NoItem:
-  - Complete No Item
-  dialogue_Incomplete_Item:
-  - Incomplete Item
-  dialogue_Complete_Item:
-  - Complete Item
-  dialogue_Incomplete_NoItem:
-  - Incomplete No Item
-  characterName: []
-  character: Perfume Boy
-  reward: 8
-  manualTransport: 1
-  unlockArrow: 0
-  introduced: 0
-  destination: Nose Void
-  toUnlock: {fileID: 0}
 --- !u!212 &1042010915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4158,18 +3943,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1082433529}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1135458844 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
-    type: 3}
-  m_PrefabInstance: {fileID: 1567819661}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0b1425533df77f489d9525d4affdf4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1146840482
 GameObject:
   m_ObjectHideFlags: 0
@@ -4576,9 +4349,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1175235768}
   - component: {fileID: 1175235767}
+  - component: {fileID: 1175235769}
   m_Layer: 0
   m_Name: Stock Image of A Lake
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4649,6 +4423,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1175235769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175235766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 38.399998, y: 21.599998, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1188347862
 GameObject:
   m_ObjectHideFlags: 0
@@ -4821,9 +4608,10 @@ GameObject:
   - component: {fileID: 1227962264}
   - component: {fileID: 1227962266}
   - component: {fileID: 1227962267}
+  - component: {fileID: 1227962268}
   m_Layer: 0
   m_Name: Lower Elevator
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4924,6 +4712,19 @@ MonoBehaviour:
   elevatorTimer: 60
   inMotion: 0
   camera: {fileID: 1597722416}
+--- !u!65 &1227962268
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227962263}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1256330684
 GameObject:
   m_ObjectHideFlags: 0
@@ -5077,18 +4878,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1286904660 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
-    type: 3}
-  m_PrefabInstance: {fileID: 1606191887}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0b1425533df77f489d9525d4affdf4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1316976031
 GameObject:
   m_ObjectHideFlags: 0
@@ -6108,9 +5897,10 @@ GameObject:
   - component: {fileID: 1527361356}
   - component: {fileID: 1527361355}
   - component: {fileID: 1527361357}
+  - component: {fileID: 1527361358}
   m_Layer: 0
   m_Name: Realm of Bargains
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6195,6 +5985,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCharacter: {fileID: 233063023}
   doIBark: 0
+--- !u!65 &1527361358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527361354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1565190243
 GameObject:
   m_ObjectHideFlags: 0
@@ -6401,6 +6204,11 @@ PrefabInstance:
       propertyPath: unlocked
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
+        type: 3}
+      propertyPath: sr
+      value: 
+      objectReference: {fileID: 646783561}
     - target: {fileID: 8111270066865596108, guid: 0de2c259627b91040a325229bc51f962,
         type: 3}
       propertyPath: roomName
@@ -6663,9 +6471,10 @@ GameObject:
   - component: {fileID: 1570626375}
   - component: {fileID: 1570626374}
   - component: {fileID: 1570626377}
+  - component: {fileID: 1570626378}
   m_Layer: 0
   m_Name: Upper Elevator
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6745,7 +6554,7 @@ Transform:
   m_LocalScale: {x: 1.867524, y: 1.867524, z: 1.867524}
   m_Children:
   - {fileID: 83685193}
-  - {fileID: 263610391}
+  - {fileID: 1866974480}
   - {fileID: 419522870}
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -6766,6 +6575,19 @@ MonoBehaviour:
   elevatorTimer: 60
   inMotion: 0
   camera: {fileID: 1597722416}
+--- !u!65 &1570626378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570626373}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1597722415
 GameObject:
   m_ObjectHideFlags: 0
@@ -7175,7 +6997,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1735349756}
   - component: {fileID: 1735349755}
-  - component: {fileID: 1735349758}
   - component: {fileID: 1735349757}
   m_Layer: 0
   m_Name: Carpet Muncher
@@ -7260,37 +7081,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.803066, y: 20.800001, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1735349758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1735349754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myMouse: {fileID: 1256330685}
-  idealState: 6
-  taskComplete: 0
-  dialogueText: {fileID: 4900000, guid: 6214f6236f9004633a72272f9b8d192a, type: 3}
-  introduction: []
-  welcomeBarks: []
-  dialogue_CorrectItem: []
-  dialogue_Complete_NoItem: []
-  dialogue_Incomplete_Item: []
-  dialogue_Complete_Item: []
-  dialogue_Incomplete_NoItem: []
-  characterName: []
-  character: 
-  reward: 5
-  manualTransport: 0
-  unlockArrow: 0
-  introduced: 0
-  destination: 
-  toUnlock: {fileID: 0}
 --- !u!1 &1741939394
 GameObject:
   m_ObjectHideFlags: 0
@@ -7461,9 +7251,10 @@ GameObject:
   - component: {fileID: 1814375009}
   - component: {fileID: 1814375008}
   - component: {fileID: 1814375010}
+  - component: {fileID: 1814375011}
   m_Layer: 0
   m_Name: Aromatorium
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7547,8 +7338,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccd48b9634634399836ec4fa4952ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCharacter: {fileID: 1042010914}
+  myCharacter: {fileID: 0}
   doIBark: 0
+--- !u!65 &1814375011
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814375007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1836118865
 GameObject:
   m_ObjectHideFlags: 0
@@ -7778,25 +7582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMouse: {fileID: 1256330685}
-  idealState: 3
-  taskComplete: 0
-  dialogueText: {fileID: 4900000, guid: f77cf53cc0375442cb9b24636e8361dd, type: 3}
-  introduction: []
-  welcomeBarks: []
-  dialogue_CorrectItem: []
-  dialogue_Complete_NoItem: []
-  dialogue_Incomplete_Item: []
-  dialogue_Complete_Item: []
-  dialogue_Incomplete_NoItem: []
-  characterName: []
-  character: 
-  reward: 0
-  manualTransport: 0
-  unlockArrow: 1
-  introduced: 0
-  destination: 
-  toUnlock: {fileID: 1286904660}
 --- !u!1 &1845709315
 GameObject:
   m_ObjectHideFlags: 0
@@ -7877,6 +7662,127 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1866974479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1866974480}
+  - component: {fileID: 1866974484}
+  - component: {fileID: 1866974483}
+  - component: {fileID: 1866974482}
+  - component: {fileID: 1866974481}
+  m_Layer: 0
+  m_Name: Upper Elevator Man
+  m_TagString: NPC
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1866974480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866974479}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.4783916, y: 0.15936038, z: -1.0709368}
+  m_LocalScale: {x: 0.4618148, y: 0.47116688, z: 0.44533733}
+  m_Children: []
+  m_Father: {fileID: 1570626376}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1866974481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866974479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89a5e5b7c4ee55044ba83669fa3cea1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dm: {fileID: 969393407}
+--- !u!114 &1866974482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866974479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1866974483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866974479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.262815, y: 18.493214, z: 0.19999999}
+  m_Center: {x: 0.7526456, y: 0.024396906, z: 0}
+--- !u!212 &1866974484
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866974479}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b05a99c00468d411f99a2a130fbad622, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 20.8, y: 20.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1939167585
 GameObject:
   m_ObjectHideFlags: 0
@@ -7888,9 +7794,10 @@ GameObject:
   - component: {fileID: 1939167589}
   - component: {fileID: 1939167588}
   - component: {fileID: 1939167586}
+  - component: {fileID: 1939167587}
   m_Layer: 0
   m_Name: Don's Low-Calorie Carpets
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7907,8 +7814,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ccd48b9634634399836ec4fa4952ff0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCharacter: {fileID: 1735349758}
+  myCharacter: {fileID: 0}
   doIBark: 0
+--- !u!65 &1939167587
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939167585}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.2, y: 10.8, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1939167588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8090,7 +8010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -7.600006}
+  m_AnchoredPosition: {x: 0, y: -7.5999756}
   m_SizeDelta: {x: 800, y: 43.3}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1970482342
@@ -8213,8 +8133,6 @@ MonoBehaviour:
   myMouse: {fileID: 1256330685}
   myInv: {fileID: 1970482344}
   camera: {fileID: 1597722416}
-  upElevator: {fileID: 1227962267}
-  downElevator: {fileID: 1570626377}
 --- !u!1001 &2012811371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8554,9 +8472,10 @@ GameObject:
   - component: {fileID: 2133513510}
   - component: {fileID: 2133513509}
   - component: {fileID: 2133513511}
+  - component: {fileID: 2133513512}
   m_Layer: 0
   m_Name: Nose Void
-  m_TagString: Untagged
+  m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8639,6 +8558,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCharacter: {fileID: 0}
   doIBark: 0
+--- !u!65 &2133513512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133513508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &5427096051108364480
 PrefabInstance:
   m_ObjectHideFlags: 0

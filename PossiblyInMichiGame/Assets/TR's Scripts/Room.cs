@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    public Dialogue_Holder myCharacter;
+    public DialogueHolder myCharacter;
     public bool doIBark;
 }

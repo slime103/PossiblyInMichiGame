@@ -203,4 +203,37 @@ public class Inventory : MonoBehaviour
                 break;
         }
     }
+
+    public void RemoveItem()
+    {
+        switch (myMouse.myState)
+        {
+            case Mouse_Manager.MouseState.Quarter:
+                invButtons[0].interactable = false;
+                break;
+            case Mouse_Manager.MouseState.Key:
+                invButtons[1].interactable = false;
+                break;
+            case Mouse_Manager.MouseState.Gum:
+                invButtons[2].interactable = false;
+                break;
+            case Mouse_Manager.MouseState.Baby:
+                invButtons[3].interactable = false;
+                break;
+            case Mouse_Manager.MouseState.Ear:
+                invButtons[4].interactable = false;
+                break;
+            case Mouse_Manager.MouseState.Shoe:
+                invButtons[5].interactable = false;
+                break;
+            case Mouse_Manager.MouseState.Snail:
+                invButtons[6].interactable = false;
+                break;
+            case Mouse_Manager.MouseState.Perfume:
+                invButtons[7].interactable = false;
+                break;
+        }
+        myMouse.SetState(Mouse_Manager.MouseState.None);
+        //replace the sprite with a green check mark and make that button non interactable
+    }
 }
