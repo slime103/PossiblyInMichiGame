@@ -27,6 +27,7 @@ public class Inventory : MonoBehaviour
             }
         }
         ReturnItem(Mouse_Manager.MouseState.Quarter);
+        gameObject.SetActive(false);
     }
 
     void Update()

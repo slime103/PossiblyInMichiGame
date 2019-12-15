@@ -33,7 +33,7 @@ public class Dialogue_Manager : MonoBehaviour
     public bool isTalkingTo;
     
     //Scripts
-    public DialogueHolder dialogueHolder; //Taking the script that's on the NPCS
+    public Dialogue_Holder dialogueHolder; //Taking the script that's on the NPCS
     public string[] thisDialogueSequence;
     public Mouse_Manager myMouse;
     public Inventory myInv;
@@ -63,7 +63,7 @@ public class Dialogue_Manager : MonoBehaviour
         
         currentlyTalkingTo = NPC; //Set currentlyTalkingTo from null to whatever the NPC is
 
-        dialogueHolder = NPC.GetComponent<DialogueHolder>(); //Take the Dialogue Holder from the NPC
+        dialogueHolder = NPC.GetComponent<Dialogue_Holder>(); //Take the Dialogue Holder from the NPC
         Debug.Log(state);
         /*
         switch (dialogueHolder.taskComplete)
@@ -134,7 +134,7 @@ public class Dialogue_Manager : MonoBehaviour
                 }
                 break;
         }*/
-        //thisDialogueSequence = dialogueHolder.ReadMouseAndGetDialogue(state);
+        thisDialogueSequence = dialogueHolder.ReadMouseAndGetDialogue(state);
         if (myMouse.myState != Mouse_Manager.MouseState.None && thisDialogueSequence == dialogueHolder.ReadMouseAndGetDialogue(dialogueHolder.idealState))
         {
             myInv.RemoveItem();
@@ -150,7 +150,7 @@ public class Dialogue_Manager : MonoBehaviour
         SetSequence(0); //Resets the Sequence for every new character
     }
 
-    public void Bark(DialogueHolder whichChar)
+    public void Bark(Dialogue_Holder whichChar)
     {
         isTalkingTo = true;
         currentlyTalkingTo = whichChar.gameObject;

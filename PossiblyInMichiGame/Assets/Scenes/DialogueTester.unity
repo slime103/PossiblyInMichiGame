@@ -551,6 +551,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 83685192}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &83685194 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
+    type: 3}
+  m_PrefabInstance: {fileID: 83685192}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b1425533df77f489d9525d4affdf4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &97212526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1014,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySR: {fileID: 233063021}
+  startSprite: {fileID: 21300000, guid: 67e742e4e05cbe043bd0ad21c05f3889, type: 3}
+  endSprite: {fileID: 21300000, guid: 2a6dcff65b6474d8a85affbc2df92739, type: 3}
+  myMouse: {fileID: 1256330685}
+  idealState: 4
+  taskComplete: 0
+  dialogueText: {fileID: 4900000, guid: 3332829201307441bbe03cbd7a95cdcf, type: 3}
+  introduction: []
+  dialogueIncompleteNoItem: []
+  dialogueIncompleteQuarter: []
+  dialogueIncompleteKey: []
+  dialogueIncompleteGum: []
+  dialogueIncompleteBaby: []
+  dialogueIncompleteEar: []
+  dialogueIncompleteShoe: []
+  dialogueIncompleteSnail: []
+  dialogueCompleteNoItem: []
+  dialogueCompleteQuarter: []
+  dialogueCompleteKey: []
+  dialogueCompleteGum: []
+  dialogueCompleteBaby: []
+  dialogueCompleteEar: []
+  dialogueCompleteShoe: []
+  dialogueCompleteSnail: []
+  dialogueIdeal: []
+  characterName: []
+  character: 
+  reward: 6
+  swapSprite: 1
+  unlockArrow: 0
+  introduced: 0
+  toUnlock: {fileID: 0}
 --- !u!65 &233063024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1437,6 +1481,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySR: {fileID: 416014786}
+  startSprite: {fileID: 21300000, guid: cc7f0d8262d661a4c843a2dd9be02a68, type: 3}
+  endSprite: {fileID: 21300000, guid: a03d9a61820234b779966b1360216f27, type: 3}
+  myMouse: {fileID: 1256330685}
+  idealState: 1
+  taskComplete: 0
+  dialogueText: {fileID: 4900000, guid: 003db94fb0088455a834897351ad7319, type: 3}
+  introduction: []
+  dialogueIncompleteNoItem: []
+  dialogueIncompleteQuarter: []
+  dialogueIncompleteKey: []
+  dialogueIncompleteGum: []
+  dialogueIncompleteBaby: []
+  dialogueIncompleteEar: []
+  dialogueIncompleteShoe: []
+  dialogueIncompleteSnail: []
+  dialogueCompleteNoItem: []
+  dialogueCompleteQuarter: []
+  dialogueCompleteKey: []
+  dialogueCompleteGum: []
+  dialogueCompleteBaby: []
+  dialogueCompleteEar: []
+  dialogueCompleteShoe: []
+  dialogueCompleteSnail: []
+  dialogueIdeal: []
+  characterName: []
+  character: 
+  reward: 3
+  swapSprite: 1
+  unlockArrow: 0
+  introduced: 0
+  toUnlock: {fileID: 0}
 --- !u!1 &419522869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,6 +1827,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySR: {fileID: 563485269}
+  startSprite: {fileID: 21300000, guid: b05a99c00468d411f99a2a130fbad622, type: 3}
+  endSprite: {fileID: 0}
+  myMouse: {fileID: 1256330685}
+  idealState: 2
+  taskComplete: 0
+  dialogueText: {fileID: 4900000, guid: c90e2e2edf8b84d6194c627d2cec7400, type: 3}
+  introduction: []
+  dialogueIncompleteNoItem: []
+  dialogueIncompleteQuarter: []
+  dialogueIncompleteKey: []
+  dialogueIncompleteGum: []
+  dialogueIncompleteBaby: []
+  dialogueIncompleteEar: []
+  dialogueIncompleteShoe: []
+  dialogueIncompleteSnail: []
+  dialogueCompleteNoItem: []
+  dialogueCompleteQuarter: []
+  dialogueCompleteKey: []
+  dialogueCompleteGum: []
+  dialogueCompleteBaby: []
+  dialogueCompleteEar: []
+  dialogueCompleteShoe: []
+  dialogueCompleteSnail: []
+  dialogueIdeal: []
+  characterName: []
+  character: 
+  reward: 0
+  swapSprite: 0
+  unlockArrow: 1
+  introduced: 0
+  toUnlock: {fileID: 1567819663}
 --- !u!65 &563485268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2115,6 +2223,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySR: {fileID: 664853268}
+  startSprite: {fileID: 21300000, guid: 82a0db9f27d079e46850bc43c0d98e7e, type: 3}
+  endSprite: {fileID: 21300000, guid: 693dd22e7f8f60d488dc4b1591cba2af, type: 3}
+  myMouse: {fileID: 1256330685}
+  idealState: 5
+  taskComplete: 0
+  dialogueText: {fileID: 4900000, guid: 27398e305ce0f49c8b0d0bf63f4d2a69, type: 3}
+  introduction: []
+  dialogueIncompleteNoItem: []
+  dialogueIncompleteQuarter: []
+  dialogueIncompleteKey: []
+  dialogueIncompleteGum: []
+  dialogueIncompleteBaby: []
+  dialogueIncompleteEar: []
+  dialogueIncompleteShoe: []
+  dialogueIncompleteSnail: []
+  dialogueCompleteNoItem: []
+  dialogueCompleteQuarter: []
+  dialogueCompleteKey: []
+  dialogueCompleteGum: []
+  dialogueCompleteBaby: []
+  dialogueCompleteEar: []
+  dialogueCompleteShoe: []
+  dialogueCompleteSnail: []
+  dialogueIdeal: []
+  characterName: []
+  character: 
+  reward: 7
+  swapSprite: 1
+  unlockArrow: 0
+  introduced: 0
+  toUnlock: {fileID: 0}
 --- !u!1 &667367793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3504,6 +3644,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1042010916}
   - component: {fileID: 1042010915}
+  - component: {fileID: 1042010914}
   - component: {fileID: 1042010913}
   m_Layer: 0
   m_Name: Keeper of Scents
@@ -3525,6 +3666,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20.8, y: 20.8, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1042010914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042010912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySR: {fileID: 1042010915}
+  startSprite: {fileID: 21300000, guid: 6c2a72d769bdbaf4f9b4b8a338ef4c17, type: 3}
+  endSprite: {fileID: 0}
+  myMouse: {fileID: 1256330685}
+  idealState: 7
+  taskComplete: 0
+  dialogueText: {fileID: 4900000, guid: cd206f1454309437c9c183064ee695bf, type: 3}
+  introduction: []
+  dialogueIncompleteNoItem: []
+  dialogueIncompleteQuarter: []
+  dialogueIncompleteKey: []
+  dialogueIncompleteGum: []
+  dialogueIncompleteBaby: []
+  dialogueIncompleteEar: []
+  dialogueIncompleteShoe: []
+  dialogueIncompleteSnail: []
+  dialogueCompleteNoItem: []
+  dialogueCompleteQuarter: []
+  dialogueCompleteKey: []
+  dialogueCompleteGum: []
+  dialogueCompleteBaby: []
+  dialogueCompleteEar: []
+  dialogueCompleteShoe: []
+  dialogueCompleteSnail: []
+  dialogueIdeal: []
+  characterName: []
+  character: 
+  reward: 8
+  swapSprite: 0
+  unlockArrow: 0
+  introduced: 0
+  toUnlock: {fileID: 0}
 --- !u!212 &1042010915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6459,6 +6644,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1567819661}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1567819663 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
+    type: 3}
+  m_PrefabInstance: {fileID: 1567819661}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b1425533df77f489d9525d4affdf4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1570626373
 GameObject:
   m_ObjectHideFlags: 0
@@ -6854,6 +7051,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1606191887}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1606191889 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6151561619843508433, guid: 0de2c259627b91040a325229bc51f962,
+    type: 3}
+  m_PrefabInstance: {fileID: 1606191887}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b1425533df77f489d9525d4affdf4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1641372925
 GameObject:
   m_ObjectHideFlags: 0
@@ -6997,6 +7206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1735349756}
   - component: {fileID: 1735349755}
+  - component: {fileID: 1735349758}
   - component: {fileID: 1735349757}
   m_Layer: 0
   m_Name: Carpet Muncher
@@ -7081,6 +7291,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40.803066, y: 20.800001, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1735349758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735349754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mySR: {fileID: 1735349755}
+  startSprite: {fileID: 21300000, guid: 529576d4b82a24c33bf623c5076b939a, type: 3}
+  endSprite: {fileID: 21300000, guid: 2b3d1b1c622304eafa473af421dd4aac, type: 3}
+  myMouse: {fileID: 1256330685}
+  idealState: 6
+  taskComplete: 0
+  dialogueText: {fileID: 4900000, guid: 6214f6236f9004633a72272f9b8d192a, type: 3}
+  introduction: []
+  dialogueIncompleteNoItem: []
+  dialogueIncompleteQuarter: []
+  dialogueIncompleteKey: []
+  dialogueIncompleteGum: []
+  dialogueIncompleteBaby: []
+  dialogueIncompleteEar: []
+  dialogueIncompleteShoe: []
+  dialogueIncompleteSnail: []
+  dialogueCompleteNoItem: []
+  dialogueCompleteQuarter: []
+  dialogueCompleteKey: []
+  dialogueCompleteGum: []
+  dialogueCompleteBaby: []
+  dialogueCompleteEar: []
+  dialogueCompleteShoe: []
+  dialogueCompleteSnail: []
+  dialogueIdeal: []
+  characterName: []
+  character: 
+  reward: 5
+  swapSprite: 0
+  unlockArrow: 0
+  introduced: 0
+  toUnlock: {fileID: 0}
 --- !u!1 &1741939394
 GameObject:
   m_ObjectHideFlags: 0
@@ -7582,6 +7836,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySR: {fileID: 1840730138}
+  startSprite: {fileID: 21300000, guid: 1145fea6d56f2b14f920a12e4cb1e249, type: 3}
+  endSprite: {fileID: 21300000, guid: 683e77e511418434b94eaf177bb81e8a, type: 3}
+  myMouse: {fileID: 1256330685}
+  idealState: 3
+  taskComplete: 0
+  dialogueText: {fileID: 4900000, guid: f77cf53cc0375442cb9b24636e8361dd, type: 3}
+  introduction: []
+  dialogueIncompleteNoItem: []
+  dialogueIncompleteQuarter: []
+  dialogueIncompleteKey: []
+  dialogueIncompleteGum: []
+  dialogueIncompleteBaby: []
+  dialogueIncompleteEar: []
+  dialogueIncompleteShoe: []
+  dialogueIncompleteSnail: []
+  dialogueCompleteNoItem: []
+  dialogueCompleteQuarter: []
+  dialogueCompleteKey: []
+  dialogueCompleteGum: []
+  dialogueCompleteBaby: []
+  dialogueCompleteEar: []
+  dialogueCompleteShoe: []
+  dialogueCompleteSnail: []
+  dialogueIdeal: []
+  characterName: []
+  character: 
+  reward: 0
+  swapSprite: 1
+  unlockArrow: 1
+  introduced: 0
+  toUnlock: {fileID: 1606191889}
 --- !u!1 &1845709315
 GameObject:
   m_ObjectHideFlags: 0
@@ -7721,6 +8007,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd88ae89af23bbb4aae80145d544d654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySR: {fileID: 1866974484}
+  startSprite: {fileID: 21300000, guid: b05a99c00468d411f99a2a130fbad622, type: 3}
+  endSprite: {fileID: 0}
+  myMouse: {fileID: 1256330685}
+  idealState: 2
+  taskComplete: 1
+  dialogueText: {fileID: 4900000, guid: c90e2e2edf8b84d6194c627d2cec7400, type: 3}
+  introduction: []
+  dialogueIncompleteNoItem: []
+  dialogueIncompleteQuarter: []
+  dialogueIncompleteKey: []
+  dialogueIncompleteGum: []
+  dialogueIncompleteBaby: []
+  dialogueIncompleteEar: []
+  dialogueIncompleteShoe: []
+  dialogueIncompleteSnail: []
+  dialogueCompleteNoItem: []
+  dialogueCompleteQuarter: []
+  dialogueCompleteKey: []
+  dialogueCompleteGum: []
+  dialogueCompleteBaby: []
+  dialogueCompleteEar: []
+  dialogueCompleteShoe: []
+  dialogueCompleteSnail: []
+  dialogueIdeal: []
+  characterName: []
+  character: 
+  reward: 0
+  swapSprite: 0
+  unlockArrow: 1
+  introduced: 1
+  toUnlock: {fileID: 83685194}
 --- !u!65 &1866974483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7992,7 +8310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1970482341
 RectTransform:
   m_ObjectHideFlags: 0

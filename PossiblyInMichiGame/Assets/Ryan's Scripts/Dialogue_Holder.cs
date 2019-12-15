@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 //INTENT: Allows customizable dialogue for the player to click through
 //USAGE: Put this on all of the NPCs with reckless abandon
-public class DialogueHolder : MonoBehaviour
+public class Dialogue_Holder : MonoBehaviour
 {
     public SpriteRenderer mySR;
     public Sprite startSprite, endSprite;
