@@ -13,16 +13,18 @@ public class Dialogue_Holder : MonoBehaviour
     public TextAsset dialogueText; //use this to import the dialogue for each character
 
     //It's an array so you can put as many dialogue sequences as you want
-    public string[] welcomeBarks;
+    public string[] introduction;
+    public string[] dialogue_Incomplete_NoItem;
+    public string[] dialogue_Incomplete_Quarter;
     public string[] dialogue_CorrectItem;
     public string[] dialogue_Complete_NoItem;
     public string[] dialogue_Incomplete_Item; //Dialogue string
     public string[] dialogue_Complete_Item;
-    public string[] dialogue_Incomplete_NoItem;
+    
     public string[] characterName; //Name string
     public string character;
     public Mouse_Manager.MouseState reward;
-    public bool manualTransport, unlockArrow;
+    public bool manualTransport, unlockArrow, introduced;
     public string destination;
     public Arrow toUnlock;
 
@@ -30,6 +32,7 @@ public class Dialogue_Holder : MonoBehaviour
     {
         ImportDialogue();
         taskComplete = false;
+        introduced = false;
     }
 
     void ImportDialogue()
@@ -40,7 +43,6 @@ public class Dialogue_Holder : MonoBehaviour
 
         //sort array
         character = dialogueStates[0];
-        welcomeBarks = dialogueStates[1].Split(',');
         dialogue_CorrectItem = dialogueStates[2].Split(',');
         dialogue_Complete_NoItem = dialogueStates[3].Split(',');
         dialogue_Complete_Item = dialogueStates[4].Split(',');

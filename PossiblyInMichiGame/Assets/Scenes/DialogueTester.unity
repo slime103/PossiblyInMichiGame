@@ -1006,6 +1006,7 @@ MonoBehaviour:
   idealState: 4
   taskComplete: 0
   dialogueText: {fileID: 4900000, guid: 3332829201307441bbe03cbd7a95cdcf, type: 3}
+  introduction: []
   welcomeBarks: []
   dialogue_CorrectItem: []
   dialogue_Complete_NoItem: []
@@ -1020,6 +1021,7 @@ MonoBehaviour:
   reward: 6
   manualTransport: 0
   unlockArrow: 0
+  introduced: 0
   destination: 
   toUnlock: {fileID: 0}
 --- !u!65 &233063024
@@ -1160,6 +1162,7 @@ MonoBehaviour:
   idealState: 0
   taskComplete: 1
   dialogueText: {fileID: 4900000, guid: c90e2e2edf8b84d6194c627d2cec7400, type: 3}
+  introduction: []
   welcomeBarks: []
   dialogue_CorrectItem: []
   dialogue_Complete_NoItem: []
@@ -1171,6 +1174,7 @@ MonoBehaviour:
   reward: 0
   manualTransport: 0
   unlockArrow: 0
+  introduced: 0
   destination: 
   toUnlock: {fileID: 0}
 --- !u!1 &266026013
@@ -1585,6 +1589,7 @@ MonoBehaviour:
   idealState: 1
   taskComplete: 0
   dialogueText: {fileID: 4900000, guid: 003db94fb0088455a834897351ad7319, type: 3}
+  introduction: []
   welcomeBarks: []
   dialogue_CorrectItem: []
   dialogue_Complete_NoItem: []
@@ -1599,6 +1604,7 @@ MonoBehaviour:
   reward: 3
   manualTransport: 0
   unlockArrow: 0
+  introduced: 0
   destination: 
   toUnlock: {fileID: 0}
 --- !u!1 &419522869
@@ -1919,6 +1925,7 @@ MonoBehaviour:
   idealState: 2
   taskComplete: 0
   dialogueText: {fileID: 4900000, guid: c90e2e2edf8b84d6194c627d2cec7400, type: 3}
+  introduction: []
   welcomeBarks: []
   dialogue_CorrectItem: []
   dialogue_Complete_NoItem: []
@@ -1930,6 +1937,7 @@ MonoBehaviour:
   reward: 0
   manualTransport: 0
   unlockArrow: 1
+  introduced: 0
   destination: 
   toUnlock: {fileID: 1135458844}
 --- !u!65 &563485268
@@ -2294,6 +2302,11 @@ MonoBehaviour:
   idealState: 5
   taskComplete: 0
   dialogueText: {fileID: 4900000, guid: 27398e305ce0f49c8b0d0bf63f4d2a69, type: 3}
+  introduction:
+  - Oh frick frick frack, oh jeez...
+  - I have an interview at this gosh dang pet store today
+  - But I lost my other shoe!
+  - "I look like a complete fool, they\u2019ll never hire me with just one shoe!"
   welcomeBarks: []
   dialogue_CorrectItem: []
   dialogue_Complete_NoItem: []
@@ -2305,6 +2318,7 @@ MonoBehaviour:
   reward: 7
   manualTransport: 0
   unlockArrow: 0
+  introduced: 0
   destination: 
   toUnlock: {fileID: 0}
 --- !u!1 &667367793
@@ -3706,6 +3720,7 @@ MonoBehaviour:
   idealState: 7
   taskComplete: 0
   dialogueText: {fileID: 4900000, guid: cd206f1454309437c9c183064ee695bf, type: 3}
+  introduction: []
   welcomeBarks: []
   dialogue_CorrectItem:
   - Correct
@@ -3722,6 +3737,7 @@ MonoBehaviour:
   reward: 8
   manualTransport: 1
   unlockArrow: 0
+  introduced: 0
   destination: Nose Void
   toUnlock: {fileID: 0}
 --- !u!212 &1042010915
@@ -7260,6 +7276,7 @@ MonoBehaviour:
   idealState: 6
   taskComplete: 0
   dialogueText: {fileID: 4900000, guid: 6214f6236f9004633a72272f9b8d192a, type: 3}
+  introduction: []
   welcomeBarks: []
   dialogue_CorrectItem: []
   dialogue_Complete_NoItem: []
@@ -7271,6 +7288,7 @@ MonoBehaviour:
   reward: 5
   manualTransport: 0
   unlockArrow: 0
+  introduced: 0
   destination: 
   toUnlock: {fileID: 0}
 --- !u!1 &1741939394
@@ -7764,6 +7782,7 @@ MonoBehaviour:
   idealState: 3
   taskComplete: 0
   dialogueText: {fileID: 4900000, guid: f77cf53cc0375442cb9b24636e8361dd, type: 3}
+  introduction: []
   welcomeBarks: []
   dialogue_CorrectItem: []
   dialogue_Complete_NoItem: []
@@ -7775,6 +7794,7 @@ MonoBehaviour:
   reward: 0
   manualTransport: 0
   unlockArrow: 1
+  introduced: 0
   destination: 
   toUnlock: {fileID: 1286904660}
 --- !u!1 &1845709315
