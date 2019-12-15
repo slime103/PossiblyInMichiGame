@@ -73,4 +73,11 @@ public class Mouse_Manager : MonoBehaviour
                 break;
         }
     }
+
+    public void ResetState()
+    {
+        Debug.Log("Resetting mouse state");
+        myInv.ReturnItem(myState);
+        SetState(MouseState.None);
+    }
 }

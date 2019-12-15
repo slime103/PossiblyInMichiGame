@@ -15,6 +15,10 @@ public class Arrow : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         childsr = GetComponentInChildren<SpriteRenderer>();
+        if (!unlocked)
+        {
+            Hide();
+        }
         //Hide();
         //HideName();
     }
@@ -28,7 +32,7 @@ public class Arrow : MonoBehaviour
         } while (sr.color != Color.clear);*/
     }
 
-    public void Hide() //Turns the alpha to 0 making the arow invisible
+    public void Hide() //Turns the alpha to 0 making the arrow invisible
     {
         sr.color = Color.clear;
     }
@@ -36,6 +40,12 @@ public class Arrow : MonoBehaviour
     public void HideName() //Hides the room name
     {
         childsr.color = Color.clear;
+    }
+
+    public void ActivateArrow()
+    {
+        Show();
+        unlocked = true;
     }
 
     public void ShowName()
