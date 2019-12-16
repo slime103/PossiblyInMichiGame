@@ -12,7 +12,8 @@ public class Dialogue_Holder : MonoBehaviour
     public Sprite startSprite, endSprite;
     public Mouse_Manager myMouse;
     public Mouse_Manager.MouseState idealState;
-    public bool taskComplete;
+    public bool taskComplete, manualTransport;
+    public string targetRoom;
     public TextAsset dialogueText; //use this to import the dialogue for each character
 
     //It's an array so you can put as many dialogue sequences as you want
@@ -39,6 +40,11 @@ public class Dialogue_Holder : MonoBehaviour
     public Mouse_Manager.MouseState reward;
     public bool swapSprite, unlockArrow, introduced;
     public Arrow toUnlock;
+    
+    void Awake()
+    {
+        ImportDialogue();
+    }
 
     void Start()
     {
