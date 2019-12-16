@@ -120,6 +120,11 @@ public class Dialogue_Manager : MonoBehaviour
                 {
                     dialogueHolder.toUnlock.ActivateArrow();
                 }
+
+                if (dialogueHolder.manualTransport)
+                {
+                    camera.MoveToRoom(dialogueHolder.targetRoom);
+                }
             }
             else if (!dialogueHolder.introduced)
             {
