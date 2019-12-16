@@ -49,7 +49,7 @@ public class Dialogue_Manager : MonoBehaviour
         
         currentlyTalkingTo = null; //Set to null so that there is no compiler errors
         
-        SetSequence(0); //Set sequence to 0 at awake just to make sure no errors come up
+        //SetSequence(0); //Set sequence to 0 at awake just to make sure no errors come up
     }
     
     //Easily sets the NPC
@@ -140,7 +140,7 @@ public class Dialogue_Manager : MonoBehaviour
 
         dialogueText.text = thisDialogueSequence[sequenceNumber]; //Connects the strings to the texts to the sequence
 
-        //nameText.text = dialogueHolder.character; //Connects the strings to the texts to the sequence
+        nameText.text = dialogueHolder.character; //Connects the strings to the texts to the sequence
         
         Debug.Log(sequenceNumber);
 

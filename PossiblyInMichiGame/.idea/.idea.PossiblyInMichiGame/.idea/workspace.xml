@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DialogueTester.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DialogueTester.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TR's Scripts/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TR's Scripts/Room.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,10 +64,10 @@
         <option value="$PROJECT_DIR$/Assets/Text/MOM.txt" />
         <option value="$PROJECT_DIR$/Assets/Text/CARPET.txt" />
         <option value="$PROJECT_DIR$/Assets/Text/ShoeGuy.txt" />
-        <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" />
         <option value="$PROJECT_DIR$/Assets/TR's Scripts/Room.cs" />
-        <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/TR's Scripts/Inventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" />
       </list>
     </option>
   </component>
@@ -150,6 +147,8 @@
       <workItem from="1576441909882" duration="26000" />
       <workItem from="1576442195732" duration="14000" />
       <workItem from="1576442250430" duration="477000" />
+      <workItem from="1576443107946" duration="215000" />
+      <workItem from="1576456412234" duration="249000" />
     </task>
     <servers />
   </component>

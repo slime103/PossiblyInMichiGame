@@ -40,6 +40,11 @@ public class Dialogue_Holder : MonoBehaviour
     public Mouse_Manager.MouseState reward;
     public bool swapSprite, unlockArrow, introduced;
     public Arrow toUnlock;
+    
+    void Awake()
+    {
+        ImportDialogue();
+    }
 
     void Start()
     {
