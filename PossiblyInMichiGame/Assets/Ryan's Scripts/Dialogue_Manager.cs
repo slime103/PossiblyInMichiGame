@@ -64,45 +64,19 @@ public class Dialogue_Manager : MonoBehaviour
         currentlyTalkingTo = NPC; //Set currentlyTalkingTo from null to whatever the NPC is
 
         dialogueHolder = NPC.GetComponent<Dialogue_Holder>(); //Take the Dialogue Holder from the NPC
-
-        switch (dialogueHolder.taskComplete)
+        thisDialogueSequence = dialogueHolder.ReadMouseAndGetDialogue(state);
+        if (myMouse.myState != Mouse_Manager.MouseState.None && thisDialogueSequence == dialogueHolder.ReadMouseAndGetDialogue(dialogueHolder.idealState))
         {
-            case true:
-                if (myMouse.myState == Mouse_Manager.MouseState.None)
-                {
-                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
-                }
-                else
-                {
-                    myInv.ReturnItem(myMouse.myState);
-                    myMouse.SetState(Mouse_Manager.MouseState.None);
-                    thisDialogueSequence = dialogueHolder.dialogue_Complete_NoItem;
-                }
-                break;
-            case false:
-                if (myMouse.myState == Mouse_Manager.MouseState.None)
-                {
-                    thisDialogueSequence = dialogueHolder.dialogue_Incomplete_NoItem;
-                }
-                else if (myMouse.myState == dialogueHolder.idealState)
-                {
-                    thisDialogueSequence = dialogueHolder.dialogue_CorrectItem;
-                    myMouse.SetState(Mouse_Manager.MouseState.None);
-                    dialogueHolder.taskComplete = true;
-                    if (dialogueHolder.character == "Elevator Man")
-                    {
-                        dialogueHolder.gameObject.tag = "ElevatorUp";
-                    }
-                }
-                else
-                {
-                    thisDialogueSequence = dialogueHolder.dialogue_Complete_Item;
-                    myInv.ReturnItem(myMouse.myState);
-                    myMouse.SetState(Mouse_Manager.MouseState.None);
-                }
-                break;
+            myInv.RemoveItem();
+            if (dialogueHolder.swapSprite)
+            {
+                dialogueHolder.mySR.sprite = dialogueHolder.endSprite;
+            }
         }
-
+        else if (myMouse.myState != Mouse_Manager.MouseState.None && thisDialogueSequence != dialogueHolder.ReadMouseAndGetDialogue(dialogueHolder.idealState))
+        {
+            myMouse.ResetState();
+        }
         SetSequence(0); //Resets the Sequence for every new character
     }
 
@@ -134,20 +108,22 @@ public class Dialogue_Manager : MonoBehaviour
             currentlyTalkingTo = null; //MUST BE NULL
 
             isTalkingTo = false;
-            if (thisDialogueSequence == dialogueHolder.dialogue_CorrectItem)
+            if (thisDialogueSequence == dialogueHolder.dialogueIdeal)
             {
+                myInv.RemoveItem();
+                dialogueHolder.taskComplete = true;
                 if (dialogueHolder.reward != Mouse_Manager.MouseState.None)
                 {
                     myInv.ReturnItem(dialogueHolder.reward);
                 }
                 if (dialogueHolder.unlockArrow)
                 {
-                    dialogueHolder.toUnlock.unlocked = true;
+                    dialogueHolder.toUnlock.ActivateArrow();
                 }
-                if (dialogueHolder.manualTransport)
-                {
-                    camera.MoveToRoom(dialogueHolder.destination);
-                }
+            }
+            else if (!dialogueHolder.introduced)
+            {
+                dialogueHolder.introduced = true;
             }
         }
         else //Keeps the sequence going
@@ -161,11 +137,10 @@ public class Dialogue_Manager : MonoBehaviour
     //The Dialogue System
     public void SetSequence(int sequenceNumber)
     {
-        Debug.Log("Start conversation");
-        
+
         dialogueText.text = thisDialogueSequence[sequenceNumber]; //Connects the strings to the texts to the sequence
 
-        nameText.text = dialogueHolder.character; //Connects the strings to the texts to the sequence
+        //nameText.text = dialogueHolder.character; //Connects the strings to the texts to the sequence
         
         Debug.Log(sequenceNumber);
 
