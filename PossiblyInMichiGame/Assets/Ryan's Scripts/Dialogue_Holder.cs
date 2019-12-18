@@ -51,8 +51,6 @@ public class Dialogue_Holder : MonoBehaviour
     {
         mySR.sprite = startSprite;
         ImportDialogue();
-        taskComplete = false;
-        introduced = false;
         switch (idealState)
         {
             case Mouse_Manager.MouseState.Quarter:

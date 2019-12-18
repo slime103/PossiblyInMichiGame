@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baef9d75-8308-4558-9b51-30a2f6fff56b" name="Default Changelist" comment="" />
+    <list default="true" id="baef9d75-8308-4558-9b51-30a2f6fff56b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PossiblyInMichiGame/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Holder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ryan's Scripts/Dialogue_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DialogueTester.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DialogueTester.unity" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +152,7 @@
       <workItem from="1576456412234" duration="249000" />
       <workItem from="1576471744988" duration="204000" />
       <workItem from="1576646951153" duration="255000" />
+      <workItem from="1576650601620" duration="356000" />
     </task>
     <servers />
   </component>
