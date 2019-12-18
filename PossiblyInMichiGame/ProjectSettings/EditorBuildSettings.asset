@@ -14,9 +14,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CameraMoveTest.unity
     guid: 4e0ee527d78ef4f46be8669621da3ec2
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/DialogueTester.unity
-    guid: 69d53ae53e527834da239662f659e0a3
+    guid: f4ee03df3933eeb4d8df6ffa3e177ced
   - enabled: 1
     path: Assets/Scenes/WinScreen.unity
     guid: 4f159e0fdefbf487e99d3ef8ba75f3c3
