@@ -150,4 +150,5 @@ public class Dialogue_Manager : MonoBehaviour
         Debug.Log(sequenceNumber);
 
     }
+
 }
