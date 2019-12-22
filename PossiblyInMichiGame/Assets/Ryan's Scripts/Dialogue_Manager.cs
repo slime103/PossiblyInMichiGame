@@ -38,6 +38,8 @@ public class Dialogue_Manager : MonoBehaviour
     public Mouse_Manager myMouse;
     public Inventory myInv;
     public CameraManager camera;
+    public AudioSource mainAudio;
+    public AudioClip chantClip;
 
     
     // Start is called before the first frame update
@@ -124,6 +126,8 @@ public class Dialogue_Manager : MonoBehaviour
                 if (dialogueHolder.manualTransport)
                 {
                     camera.MoveToRoom(dialogueHolder.targetRoom);
+                    mainAudio.clip = chantClip;
+                    mainAudio.Play();
                 }
             }
             else if (!dialogueHolder.introduced)
@@ -150,4 +154,5 @@ public class Dialogue_Manager : MonoBehaviour
         Debug.Log(sequenceNumber);
 
     }
+
 }

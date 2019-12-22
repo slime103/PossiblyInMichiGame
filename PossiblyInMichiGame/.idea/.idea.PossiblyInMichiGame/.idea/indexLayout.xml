@@ -20,6 +20,7 @@
       <Path>ScreenShots</Path>
       <Path>Temp</Path>
       <Path>ToClaraWithLove.app</Path>
+      <Path>ToClaraWithLoveGL</Path>
       <Path>obj</Path>
     </explicitExcludes>
   </component>

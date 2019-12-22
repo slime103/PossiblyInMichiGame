@@ -37,6 +37,7 @@ public class Dialogue_Holder : MonoBehaviour
     public string[] dialogueIdeal;
     public string[] characterName; //Name string
     public string character;
+
     public Mouse_Manager.MouseState reward;
     public bool swapSprite, unlockArrow, introduced;
     public Arrow toUnlock;
@@ -50,8 +51,6 @@ public class Dialogue_Holder : MonoBehaviour
     {
         mySR.sprite = startSprite;
         ImportDialogue();
-        taskComplete = false;
-        introduced = false;
         switch (idealState)
         {
             case Mouse_Manager.MouseState.Quarter:
@@ -78,13 +77,13 @@ public class Dialogue_Holder : MonoBehaviour
         }
     }
 
-    void ImportDialogue()
+    void ImportDialogue() //reads text file and splits it into corresponding arrays
     {
-        string[] dialogueStates;
+        string[] dialogueStates; //temp holder array
 
-        dialogueStates = (dialogueText.text.Split('\n'));
+        dialogueStates = (dialogueText.text.Split('\n')); //splits by line
 
-        //sort array
+        //sort array, splits each line by comma
         character = dialogueStates[0];
         introduction = dialogueStates[1].Split('~');
         dialogueIncompleteNoItem = dialogueStates[2].Split('~');
